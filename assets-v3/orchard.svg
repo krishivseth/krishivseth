@@ -1,7 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="596" height="200" viewBox="0 0 596 200" role="img" aria-label="projects / orchard">
-<defs><linearGradient id="winbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#121212"/><stop offset="1" stop-color="#0c0c0c"/></linearGradient><linearGradient id="chipg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#151515"/><stop offset="1" stop-color="#0e0e0e"/></linearGradient></defs>
-<rect x="0.5" y="0.5" width="595" height="199" rx="10" fill="url(#winbg)" stroke="#242424"/>
-<line x1="11" y1="1" x2="585" y2="1" stroke="#ffffff" stroke-opacity="0.05"/>
+<defs><linearGradient id="winbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#181818"/><stop offset="1" stop-color="#0b0b0b"/></linearGradient><linearGradient id="chipg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a1a1a"/><stop offset="1" stop-color="#0f0f0f"/></linearGradient><radialGradient id="hl" cx="0.12" cy="0" r="0.9"><stop offset="0" stop-color="#ffffff" stop-opacity="0.06"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient><linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop offset="0.7" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.35"/></linearGradient></defs>
+<rect x="0.5" y="0.5" width="595" height="199" rx="10" fill="url(#winbg)" stroke="#2a2a2a"/>
+<rect x="1" y="1" width="594" height="198" rx="10" fill="url(#hl)"/>
+<rect x="1" y="1" width="594" height="198" rx="10" fill="url(#shade)"/>
+<line x1="11" y1="1" x2="585" y2="1" stroke="#ffffff" stroke-opacity="0.08"/>
 <text x="16" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#e5e5e5" text-anchor="start" >// projects / orchard</text>
 <text x="580" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="bold" fill="#8a8a8a" text-anchor="end" >Open Source</text>
 <text x="24" y="62" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="22" font-weight="bold" fill="#e5e5e5" text-anchor="start" >Orchard</text>

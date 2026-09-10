@@ -50,9 +50,13 @@ def chip(x, y, s, fg=TEXT, right=False, size=10):
 def window(name, w, h, title, glyph, body, accent=MUTED, href=None, right=None, mark="//"):
     """Bento panel: hairline border, tonal gradient, '// label' header."""
     svg = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{E(title)}">',
-           defs(vgrad("winbg", "#121212", "#0c0c0c"), vgrad("chipg", "#151515", "#0e0e0e")),
-           f'<rect x="0.5" y="0.5" width="{w-1}" height="{h-1}" rx="10" fill="url(#winbg)" stroke="{LINE}"/>',
-           f'<line x1="11" y1="1" x2="{w-11}" y2="1" stroke="#ffffff" stroke-opacity="0.05"/>',
+           defs(vgrad("winbg", "#181818", "#0b0b0b"), vgrad("chipg", "#1a1a1a", "#0f0f0f"),
+                f'<radialGradient id="hl" cx="0.12" cy="0" r="0.9"><stop offset="0" stop-color="#ffffff" stop-opacity="0.06"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>',
+                '<linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop offset="0.7" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.35"/></linearGradient>'),
+           f'<rect x="0.5" y="0.5" width="{w-1}" height="{h-1}" rx="10" fill="url(#winbg)" stroke="#2a2a2a"/>',
+           f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#hl)"/>',
+           f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#shade)"/>',
+           f'<line x1="11" y1="1" x2="{w-11}" y2="1" stroke="#ffffff" stroke-opacity="0.08"/>',
            t(16, 22, f"{mark} {title}", 11, TEXT, "bold")]
     if right:
         svg.append(t(w - 16, 22, right, 10, MUTED, "bold", "end"))
@@ -206,7 +210,7 @@ def network(w, h, seed=3, n=42):
 # ================================================================ hero
 def hero():
     w, h = W, 236
-    body = [defs(wash("herow", GREEN, a=0.06)), f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#herow)"/>']
+    body = [defs(wash("herow", GREEN, a=0.10)), f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#herow)"/>']
     body.append(t(24, 92, "KRISHIV SETH", 40, GREEN, "bold", extra='letter-spacing="5"'))
     body.append(f'<line x1="24" y1="106" x2="520" y2="106" stroke="{GREEN}" stroke-opacity="0.5"/>')
     body.append(t(24, 128, "SOFTWARE & SECURITY ENGINEER, AI BUILDER", 12, GREEN))
@@ -216,13 +220,6 @@ def hero():
     x = w - 16
     for sname, c in [("● STATUS: ONLINE", GREEN), ("NYU: '27", MUTED), ("LOC: NYC", MUTED)]:
         ch, cwid = chip(x, 12, sname, c, right=True); body.append(ch); x -= cwid + 8
-    # stat strip
-    stats = [("6", "roles shipped"), ("5x", "hackathon wins"), ("3", "research labs"), ("6", "projects on GitHub")]
-    sx = w - 16 - 4 * 150
-    for i, (n, lab) in enumerate(stats):
-        x = sx + i * 150
-        body.append(f'<rect x="{x}" y="44" width="140" height="56" rx="8" fill="{BG}" stroke="{LINE}"/>')
-        body.append(t(x + 12, 70, n, 20, TEXT, "bold")); body.append(t(x + 12, 88, lab, 9.5, MUTED))
     body.append(t(24, h - 14, "krishivseth.com · terminal-first portfolio", 10, MUTED)); body.append(t(w - 16, h - 14, "everything below is on GitHub", 10, DIM, anchor="end"))
     window("hero", w, h, "krishiv_seth", "◈", body)
 
@@ -356,7 +353,7 @@ def awards_window():
     colw = (w - 48) / 5
     for i, (k, v) in enumerate(wins):
         x = 24 + i * colw; c = MUTED
-        body.append(f'<rect x="{x:.0f}" y="54" width="{colw-12:.0f}" height="66" rx="8" fill="{BG}" stroke="{LINE}"/>')
+        body.append(f'<rect x="{x:.0f}" y="54" width="{colw-12:.0f}" height="66" rx="8" fill="url(#chipg)" stroke="{LINE2}"/>')
         body.append(f'<rect x="{x+10:.0f}" y="66" width="2" height="42" rx="1" fill="{LINE2}"/>')
         body.append(t(x + 22, 80, k, 9, c, "bold"))
         for j, ln in enumerate(textwrap.wrap(v, 22)[:2]):
@@ -367,8 +364,8 @@ def awards_window():
 def links_bar():
     w, h = W, 44
     b = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="links">',
-         defs(vgrad("chipg", "#151515", "#0e0e0e"), vgrad("dockbg", "#161616", "#0c0c0c")),
-         f'<rect x="0.5" y="0.5" width="{w-1}" height="{h-1}" rx="10" fill="url(#dockbg)" stroke="{LINE}"/>']
+         defs(vgrad("chipg", "#1a1a1a", "#0f0f0f"), vgrad("dockbg", "#181818", "#0b0b0b")),
+         f'<rect x="0.5" y="0.5" width="{w-1}" height="{h-1}" rx="10" fill="url(#dockbg)" stroke="#2a2a2a"/>', f'<line x1="11" y1="1" x2="{w-11}" y2="1" stroke="#ffffff" stroke-opacity="0.08"/>']
     x = 14
     for k, v, c in [("web", "krishivseth.com", TEXT), ("linkedin", "in/krishiv-seth", TEXT), ("email", "ks7118@nyu.edu", TEXT), ("github", "@krishivseth", TEXT)]:
         b.append(t(x, 27, k, 10, DIM)); x += cw(k, 10) + 8
