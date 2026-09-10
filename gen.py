@@ -47,16 +47,15 @@ def chip(x, y, s, fg=TEXT, right=False, size=10):
             + t(x + w / 2, y + 14, s, size, fg, "bold", "middle")), w
 
 
-def window(name, w, h, title, glyph, body, accent=MUTED, href=None):
-    """macOS-style window: gradient titlebar, traffic lights, centered title."""
+def window(name, w, h, title, glyph, body, accent=MUTED, href=None, right=None, mark="//"):
+    """Bento panel: hairline border, tonal gradient, '// label' header."""
     svg = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{E(title)}">',
-           defs(vgrad("winbg", "#131313", "#0d0d0d"), vgrad("titlebg", "#1a1a1a", "#101010"), vgrad("chipg", "#151515", "#0e0e0e")),
-           f'<rect x="0.5" y="0.5" width="{w-1}" height="{h-1}" rx="10" fill="url(#winbg)" stroke="{LINE2}"/>',
-           f'<path d="M10.5,0.5 h{w-20} a10,10 0 0 1 10,10 v23.5 h-{w-1} v-23.5 a10,10 0 0 1 10,-10 z" fill="url(#titlebg)"/>',
-           f'<line x1="0.5" y1="34" x2="{w-0.5}" y2="34" stroke="{LINE}"/>',
+           defs(vgrad("winbg", "#121212", "#0c0c0c"), vgrad("chipg", "#151515", "#0e0e0e")),
+           f'<rect x="0.5" y="0.5" width="{w-1}" height="{h-1}" rx="10" fill="url(#winbg)" stroke="{LINE}"/>',
            f'<line x1="11" y1="1" x2="{w-11}" y2="1" stroke="#ffffff" stroke-opacity="0.05"/>',
-           f'<circle cx="20" cy="17" r="6" fill="{RED}"/><circle cx="38" cy="17" r="6" fill="{ORANGE}"/><circle cx="56" cy="17" r="6" fill="{GREEN}"/>',
-           t(w / 2, 21, f"{glyph} {title}", 11, TEXT, "bold", "middle")]
+           t(16, 22, f"{mark} {title}", 11, TEXT, "bold")]
+    if right:
+        svg.append(t(w - 16, 22, right, 10, MUTED, "bold", "end"))
     svg += body
     svg.append("</svg>")
     (OUT / f"{name}.svg").write_text("\n".join(svg))
@@ -204,90 +203,30 @@ def network(w, h, seed=3, n=42):
     return out
 
 
-# ================================================================ hero: the desktop
-def desktop():
-    w, h = W, 560
-    b = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="krishivOS desktop">',
-         defs(vgrad("winbg", "#131313", "#0d0d0d"), vgrad("titlebg", "#1a1a1a", "#101010"), vgrad("chipg", "#151515", "#0e0e0e"),
-              vgrad("menubg", "#121212", "#0a0a0a"), vgrad("dockbg", "#181818", "#0c0c0c"), vgrad("panelbg", "#141414", "#0c0c0c"),
-              wash("washg", GREEN, a=0.06), wash("washb", BLUE, "1", "1", "0", "0", a=0.05), wash("bannerw", GREEN, a=0.09), wash("welcw", BLUE, a=0.08)),
-         f'<rect width="{w}" height="{h}" rx="12" fill="{BG}"/>',
-         f'<rect width="{w}" height="{h}" rx="12" fill="url(#washg)"/><rect width="{w}" height="{h}" rx="12" fill="url(#washb)"/>']
-    b += network(w, h)
-    # menubar
-    b.append(f'<rect x="0" y="0" width="{w}" height="30" fill="url(#menubg)"/><line x1="0" y1="30" x2="{w}" y2="30" stroke="{LINE}"/>')
-    b.append(t(14, 20, "◈ krishiv_seth", 13, TEXT, "bold")); b.append(t(150, 20, "terminal", 11, MUTED))
-    x = w - 12
-    for s in ["14:02:11", "● STATUS: ONLINE", "NYU: '27", "LOC: NYC", "⌘K"]:
-        c, cwid = chip(x, 5, s, GREEN if "STATUS" in s else (MUTED if s in ("⌘K", "14:02:11") else TEXT), right=True); b.append(c); x -= cwid + 8
-    # system panel
-    px, py, pw, ph = 16, 46, 232, 296
-    b.append(f'<rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="10" fill="url(#panelbg)" stroke="{LINE}"/>')
-    b.append(t(px + 12, py + 20, "// system", 10.5, TEXT, "bold")); b.append(t(px + pw - 12, py + 20, "14:02:11", 10.5, MUTED, anchor="end"))
-    rows = [("host", "krishiv-portfolio"), ("user", "krishiv_seth"), ("loc", "New York, NY"), ("uptime", "9s"), ("roles", "6 shipped"), ("wins", "5x hackathon"), ("labs", "3 research")]
-    for i, (k, v) in enumerate(rows):
-        y = py + 42 + i * 17
-        b.append(t(px + 12, y, k, 10.5, DIM)); b.append(t(px + 64, y, v, 10.5, TEXT))
-    b.append(f'<line x1="{px+12}" y1="{py+168}" x2="{px+pw-12}" y2="{py+168}" stroke="{LINE}"/>')
-    b.append(t(px + 12, py + 188, "// commits · 12w", 10.5, TEXT, "bold")); b.append(t(px + pw - 12, py + 188, "291", 10.5, MUTED, anchor="end"))
-    b += heat(px + 12, py + 198, cell=12, gap=3, cols=12, rows=7)
-    # terminal window
-    tx, ty, tw, th = 268, 50, 740, 438
-    b.append(f'<rect x="{tx}" y="{ty}" width="{tw}" height="{th}" rx="10" fill="url(#winbg)" stroke="{LINE2}"/>')
-    b.append(f'<path d="M{tx+10},{ty} h{tw-20} a10,10 0 0 1 10,10 v24 h-{tw} v-24 a10,10 0 0 1 10,-10 z" fill="url(#titlebg)"/><line x1="{tx}" y1="{ty+34}" x2="{tx+tw}" y2="{ty+34}" stroke="{LINE}"/>')
-    b.append(f'<circle cx="{tx+20}" cy="{ty+17}" r="6" fill="{RED}"/><circle cx="{tx+38}" cy="{ty+17}" r="6" fill="{ORANGE}"/><circle cx="{tx+56}" cy="{ty+17}" r="6" fill="{GREEN}"/>')
-    b.append(t(tx + tw / 2, ty + 21, ">_ terminal", 11, TEXT, "bold", "middle"))
-    # banner box
-    bx, by, bw, bh = tx + 20, ty + 50, tw - 40, 150
-    b.append(f'<rect x="{bx}" y="{by}" width="{bw}" height="{bh}" rx="8" fill="{BG}" stroke="{GREEN}" stroke-opacity="0.22"/><rect x="{bx}" y="{by}" width="{bw}" height="{bh}" rx="8" fill="url(#bannerw)"/>')
-    b.append(t(bx + 22, by + 52, "KRISHIV", 40, GREEN, "bold", extra='letter-spacing="6"'))
-    b.append(f'<line x1="{bx+22}" y1="{by+66}" x2="{bx+330}" y2="{by+66}" stroke="{GREEN}" stroke-opacity="0.6"/>')
-    b.append(t(bx + 22, by + 86, "SOFTWARE & SECURITY ENGINEER, AI BUILDER", 11, GREEN))
-    b.append(f'<line x1="{bx+22}" y1="{by+94}" x2="{bx+330}" y2="{by+94}" stroke="{GREEN}" stroke-opacity="0.6"/>')
-    b.append(t(bx + 22, by + 116, "CS + Data Science @ NYU Courant | 5x Hackathon Winner", 11, GREEN, extra='fill-opacity="0.85"'))
-    b.append(t(bx + 22, by + 132, "Security Infra • AppSec • Full-Stack • Agentic Systems", 11, GREEN, extra='fill-opacity="0.85"'))
-    # welcome box
-    wx, wy, ww, wh = bx, by + bh + 14, bw, 138
-    b.append(f'<rect x="{wx}" y="{wy}" width="{ww}" height="{wh}" rx="8" fill="{BG}" stroke="{BLUE}" stroke-opacity="0.22"/><rect x="{wx}" y="{wy}" width="{ww}" height="{wh}" rx="8" fill="url(#welcw)"/>')
-    b.append(t(wx + 18, wy + 28, "┌─ WELCOME TO KRISHIV'S PORTFOLIO ─┐", 12, "#9cc4ff"))
-    lines = [("Type ", "'help'", " for available commands"), ("Try ", "'time-travel'", " to explore my journey"), ("Type ", "'open projects'", " to browse the desktop apps")]
-    for i, (a, cmd, rest) in enumerate(lines):
-        y = wy + 56 + i * 20
-        b.append(t(wx + 18, y, a, 12, "#cbd8ec"))
-        b.append(t(wx + 18 + cw(a, 12), y, cmd, 12, "#4ade80"))
-        b.append(t(wx + 18 + cw(a + cmd + " ", 12), y, rest.strip(), 12, "#cbd8ec"))
-    b.append(t(wx + 18, wy + 122, "Ready to explore? Let's dive in!", 12, "#cbd8ec"))
-    # prompt
-    prx, pry = bx, wy + wh + 14
-    b.append(f'<rect x="{prx}" y="{pry}" width="{bw}" height="40" rx="8" fill="{BG}" stroke="{LINE}"/>')
-    b.append(t(prx + 16, pry + 25, "visitor@krishiv-portfolio:~$", 12, GREEN, "bold")); b.append(t(prx + 16 + cw("visitor@krishiv-portfolio:~$ ", 12), pry + 25, "open projects", 12, TEXT))
-    b.append(f'<rect x="{prx+bw-22}" y="{pry+12}" width="8" height="17" rx="2" fill="{GREEN}"/>')
-    # folders column
-    fx = w - 190
-    items = [("Orchard", "folder"), ("Ouroboros", "folder"), ("What The Rent?!", "folder"), ("Trevor AI", "folder"), ("Forkast", "folder"), ("Resume.pdf", "resume"), ("GitHub", "github"), ("LinkedIn", "linkedin")]
-    for i, (label, kind) in enumerate(items):
-        col, row = i % 2, i // 2
-        ix, iy = fx + col * 92, 52 + row * 92
-        if kind == "folder":
-            b += folder_icon(ix + 14, iy, 46)
-        elif kind == "resume":
-            b += app_tile(ix + 18, iy + 2, 42, "#f5f5f4", "#d6d3d1", mk_doc, f"tile{i}")
-        elif kind == "github":
-            b += app_tile(ix + 18, iy + 2, 42, "#27272a", "#09090b", lambda x, y, s: [t(x + s/2, y + s*0.68, "gh", s*0.36, "#fff", "bold", "middle", SANS)], f"tile{i}")
-        else:
-            b += app_tile(ix + 18, iy + 2, 42, "#0a66c2", "#004182", lambda x, y, s: [t(x + s/2, y + s*0.68, "in", s*0.42, "#fff", "bold", "middle", SANS)], f"tile{i}")
-        lab = label if len(label) <= 11 else label[:10] + "…"
-        b.append(t(ix + 39, iy + 64, lab, 9.5, TEXT, anchor="middle", extra='style="paint-order:stroke" stroke="#000" stroke-width="2"'))
-    # dock
-    dw = 9 * 54 + 16; dx = (w - dw) / 2; dy = h - 76
-    b.append(f'<rect x="{dx}" y="{dy}" width="{dw}" height="66" rx="16" fill="url(#dockbg)" stroke="{LINE}"/><line x1="{dx+16}" y1="{dy+1}" x2="{dx+dw-16}" y2="{dy+1}" stroke="#fff" stroke-opacity="0.05"/>')
-    for i, (name, c1, c2, mark) in enumerate(APPS):
-        ix = dx + 12 + i * 54
-        b += app_tile(ix, dy + 9, 44, c1, c2, mark, f"dock{i}")
-        if i == 0:
-            b.append(f'<circle cx="{ix+22}" cy="{dy+60}" r="2" fill="{TEXT}"/>')
-    b.append("</svg>")
-    (OUT / "desktop.svg").write_text("\n".join(b))
+# ================================================================ hero
+def hero():
+    w, h = W, 236
+    body = [defs(wash("herow", GREEN, a=0.09), wash("herob", BLUE, "1", "1", "0", "0", a=0.05)),
+            f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#herow)"/><rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#herob)"/>']
+    body += [ln for ln in network(w, h, seed=5, n=30)]
+    body.append(t(24, 92, "KRISHIV SETH", 40, GREEN, "bold", extra='letter-spacing="5"'))
+    body.append(f'<line x1="24" y1="106" x2="520" y2="106" stroke="{GREEN}" stroke-opacity="0.5"/>')
+    body.append(t(24, 128, "SOFTWARE & SECURITY ENGINEER, AI BUILDER", 12, GREEN))
+    body.append(t(24, 156, "CS + Data Science @ NYU Courant '27, Cybersecurity minor.", 12, "#cbd8ec"))
+    body.append(t(24, 174, "Security infra and AppSec at Clear Street, forward deployed at Forkast (Antler '25),", 12, "#cbd8ec"))
+    body.append(t(24, 192, "agentic systems at Exar North, GoTrust, Kanlet. Research at OSIRIS Lab, HBS, NYU Langone.", 12, "#cbd8ec"))
+    x = w - 16
+    for sname, c in [("● STATUS: ONLINE", GREEN), ("NYU: '27", TEXT), ("LOC: NYC", TEXT)]:
+        ch, cwid = chip(x, 12, sname, c, right=True); body.append(ch); x -= cwid + 8
+    # stat strip
+    stats = [("6", "roles shipped"), ("5x", "hackathon wins"), ("3", "research labs"), ("20+", "models on consumer hw")]
+    sx = w - 16 - 4 * 150
+    for i, (n, lab) in enumerate(stats):
+        x = sx + i * 150
+        body.append(f'<rect x="{x}" y="44" width="140" height="56" rx="8" fill="{BG}" stroke="{LINE}"/>')
+        body.append(t(x + 12, 70, n, 20, TEXT, "bold")); body.append(t(x + 12, 88, lab, 9.5, MUTED))
+    body.append(t(24, h - 14, "krishivseth.com · terminal-first portfolio", 10, MUTED)); body.append(t(w - 16, h - 14, "type 'help' there", 10, DIM, anchor="end"))
+    window("hero", w, h, "krishiv_seth", "◈", body)
 
 
 # ================================================================ project windows
@@ -342,8 +281,6 @@ def project_window(slug, name, cat, color, href, desc, tags, log):
     # detail
     dx = 168
     body.append(t(dx, 56, f"~/projects/{slug}/README.md", 9.5, DIM))
-    cchip, cwid = chip(w - 14, 44, cat, color, right=True)
-    body.append(cchip)
     body.append(t(dx, 82, name, 19, color, "bold"))
     for i, ln in enumerate(textwrap.wrap(desc, 58)[:3]):
         body.append(t(dx, 104 + i * 16, ln, 11, "#c4c4c4"))
@@ -357,7 +294,7 @@ def project_window(slug, name, cat, color, href, desc, tags, log):
         y = 216 + i * 14
         body.append(t(dx + 10, y, hash7(name + line), 9.5, MUTED, "bold"))
         body.append(t(dx + 66, y, line[:58], 9.5, "#c4c4c4"))
-    window(slug, w, h, f"projects / {slug}", "▤", body, color, href)
+    window(slug, w, h, f"projects / {slug}", "//", body, color, href, right=cat, mark="//")
 
 
 # ================================================================ experience window
@@ -410,7 +347,7 @@ def experience_window():
             y += 13
         y += 5
     body.append(t(24, h - 16, "6 internships · 2024 → 2026", 10, MUTED)); body.append(t(gx + gw, h - 16, "tap a row on the site for details", 10, DIM, anchor="end"))
-    window("experience", w, h, "experience", "▬", body)
+    window("experience", w, h, "experience", "##", body, right="6 roles · 2024 → 2026", mark="##")
 
 
 # ================================================================ skills, research, awards windows
@@ -434,7 +371,7 @@ def skills_window():
         body.append(t(lx, y, k, 10.5, c, "bold"))
         for j, ln in enumerate(textwrap.wrap(desc, 40)[:2]):
             body.append(t(lx, y + 13 + j * 12, ln, 9.5, "#c4c4c4"))
-    window("skills", w, h, "skills", "▮", body)
+    window("skills", w, h, "skills", "//", body, right="51 entries")
 
 
 def research_window():
@@ -458,7 +395,7 @@ def research_window():
         body.append(t(lx, y, k, 11, c, "bold"))
         for j, ln in enumerate(textwrap.wrap(v, 50)[:2]):
             body.append(t(lx, y + 15 + j * 13, ln, 9.5, "#c4c4c4"))
-    window("research", w, h, "research", "◎", body)
+    window("research", w, h, "research", "//", body, right="3 labs")
 
 
 def awards_window():
@@ -473,8 +410,7 @@ def awards_window():
         body.append(t(x + 22, 80, k, 9, c, "bold"))
         for j, ln in enumerate(textwrap.wrap(v, 22)[:2]):
             body.append(t(x + 22, 98 + j * 13, ln, 11, TEXT, "bold"))
-    body.append(t(w - 14, 21, "5 wins", 10, GREEN, "bold", "end"))
-    window("awards", w, h, "hackathons", "▮", body)
+    window("awards", w, h, "hackathons", "##", body, right="5 wins", mark="##")
 
 
 def links_bar():
@@ -494,7 +430,7 @@ def links_bar():
 if __name__ == "__main__":
     for f in OUT.glob("*.svg"):
         f.unlink()
-    desktop()
+    hero()
     for p in PROJECTS:
         project_window(*p)
     experience_window()

@@ -1,4 +1,4 @@
-<a href="https://krishivseth.com"><img src="assets-v3/desktop.svg" alt="krishivOS desktop at krishivseth.com" width="100%"></a>
+<a href="https://krishivseth.com"><img src="assets-v3/hero.svg" alt="Krishiv Seth" width="100%"></a>
 
 <p>
   <a href="https://github.com/krishivseth/Orchard"><img src="assets-v3/orchard.svg" alt="Orchard" width="49.3%"></a> <a href="https://github.com/krishivseth/Ouroboros"><img src="assets-v3/ouroboros.svg" alt="Ouroboros" width="49.3%"></a>
