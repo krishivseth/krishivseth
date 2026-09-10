@@ -59,7 +59,7 @@ def about():
         "forward deployed engineering at Forkast (Antler '25).",
     ]
     for i, ln in enumerate(lines):
-        body.append(t(20, 56 + i * 20, ln, 13, TEXT if i < 2 else MUTED))
+        body.append(t(20, 58 + i * 21, ln, 14, TEXT if i < 2 else MUTED))
     body.append(t(w - 20, 26, "5x hackathon winner", 11, GREEN, "bold", "end"))
     body.append(t(20, h - 14, "agents", 11, MUTED)); body.append(t(w/2, h - 14, "inference", 11, MUTED, anchor="middle")); body.append(t(w - 20, h - 14, "security", 11, MUTED, anchor="end"))
     panel("about", w, h, "about", body)
@@ -96,7 +96,7 @@ def experience():
         y = 60 + i * 33
         body.append(t(54, y + 4, yr, 11, MUTED, anchor="end"))
         body.append(f'<circle cx="66" cy="{y}" r="4" fill="{PANEL}" stroke="{c}" stroke-width="1.5"/>')
-        body.append(t(82, y + 4, co, 12, TEXT, "bold")); body.append(t(w - 20, y + 4, role, 11, MUTED, anchor="end"))
+        body.append(t(82, y + 4, co, 13, TEXT, "bold")); body.append(t(w - 20, y + 4, role, 12, MUTED, anchor="end"))
     panel("experience", w, h, "experience", body)
 
 def projects():
@@ -126,9 +126,9 @@ def projects():
 def project_card(slug, name, desc, tags, color, visual):
     w, h = NARROW, 260
     body = [glow(196, 260, 200, color, 0.10, f"g{slug}")]
-    lines = textwrap.wrap(desc, 46)[:5]
+    lines = textwrap.wrap(desc, 44)[:5]
     for i, ln in enumerate(lines):
-        body.append(t(20, 54 + i * 17, ln, 11, MUTED))
+        body.append(t(20, 54 + i * 18, ln, 12, MUTED))
     body += visual(color)
     x = 20
     for tag in tags:
@@ -192,7 +192,7 @@ def awards():
     for i, (k, v, c) in enumerate(items):
         y = 62 + i * 24
         body.append(f'<rect x="20" y="{y-11}" width="4" height="14" rx="2" fill="{c}"/>')
-        body.append(t(32, y, k, 9, c, "bold")); body.append(t(140, y, v, 11, TEXT))
+        body.append(t(32, y, k, 9, c, "bold")); body.append(t(140, y, v, 12, TEXT))
     body.append(t(20, h - 14, "YC Startup School (flown out) · CodePath Cyber (Honors)", 10, MUTED))
     panel("awards", w, h, "awards", body)
 
@@ -203,8 +203,8 @@ def research():
     for i, (k, v) in enumerate(items):
         y = 62 + i * 48
         body.append(t(20, y, k, 12, TEXT, "bold"))
-        for j, ln in enumerate(textwrap.wrap(v, 50)[:2]):
-            body.append(t(20, y + 15 + j * 13, ln, 10, MUTED))
+        for j, ln in enumerate(textwrap.wrap(v, 46)[:2]):
+            body.append(t(20, y + 16 + j * 14, ln, 11, MUTED))
     panel("research", w, h, "research", body, "##")
 
 def links():

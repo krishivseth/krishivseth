@@ -2,11 +2,11 @@
 <rect x="0.5" y="0.5" width="391" height="259" rx="10" fill="#0e0e0e" stroke="#262626"/>
 <text x="20" y="26" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="bold" fill="#e5e5e5" text-anchor="start" >// trevor_ai</text>
 <defs><radialGradient id="gtrevor" cx="196" cy="260" r="200" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#a855f7" stop-opacity="0.1"/><stop offset="1" stop-color="#a855f7" stop-opacity="0"/></radialGradient></defs><rect x="1" y="1" width="100%" height="100%" rx="10" fill="url(#gtrevor)"/>
-<text x="20" y="54" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >Phone-callable investment agent. An</text>
-<text x="20" y="71" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >orchestrator voice agent fans out sub-agents</text>
-<text x="20" y="88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >for portfolio analysis, research and trade</text>
-<text x="20" y="105" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >execution, with a dashboard that updates live</text>
-<text x="20" y="122" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >during the call.</text>
+<text x="20" y="54" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#8a8a8a" text-anchor="start" >Phone-callable investment agent. An</text>
+<text x="20" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#8a8a8a" text-anchor="start" >orchestrator voice agent fans out sub-agents</text>
+<text x="20" y="90" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#8a8a8a" text-anchor="start" >for portfolio analysis, research and trade</text>
+<text x="20" y="108" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#8a8a8a" text-anchor="start" >execution, with a dashboard that updates</text>
+<text x="20" y="126" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#8a8a8a" text-anchor="start" >live during the call.</text>
 <rect x="184" y="166" width="40" height="26" rx="4" fill="#0a0a0a" stroke="#3a3a3a"/>
 <text x="204" y="183" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="normal" fill="#8a8a8a" text-anchor="middle" >call</text>
 <path d="M225,179 l5,0" stroke="#a855f7" stroke-opacity="0.7"/>

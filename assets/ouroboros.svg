@@ -2,11 +2,11 @@
 <rect x="0.5" y="0.5" width="391" height="259" rx="10" fill="#0e0e0e" stroke="#262626"/>
 <text x="20" y="26" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="bold" fill="#e5e5e5" text-anchor="start" >// ouroboros</text>
 <defs><radialGradient id="gouroboros" cx="196" cy="260" r="200" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ef4444" stop-opacity="0.1"/><stop offset="1" stop-color="#ef4444" stop-opacity="0"/></radialGradient></defs><rect x="1" y="1" width="100%" height="100%" rx="10" fill="url(#gouroboros)"/>
-<text x="20" y="54" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >Runtime security for AI agents and MCP</text>
-<text x="20" y="71" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >servers. Classifies tool calls against</text>
-<text x="20" y="88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >context-aware threat models, AST analysis for</text>
-<text x="20" y="105" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >tool poisoning and rug-pulls, sandboxing,</text>
-<text x="20" y="122" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >dependency provenance scoring.</text>
+<text x="20" y="54" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#8a8a8a" text-anchor="start" >Runtime security for AI agents and MCP</text>
+<text x="20" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#8a8a8a" text-anchor="start" >servers. Classifies tool calls against</text>
+<text x="20" y="90" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#8a8a8a" text-anchor="start" >context-aware threat models, AST analysis</text>
+<text x="20" y="108" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#8a8a8a" text-anchor="start" >for tool poisoning and rug-pulls,</text>
+<text x="20" y="126" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#8a8a8a" text-anchor="start" >sandboxing, dependency provenance scoring.</text>
 <rect x="262" y="150" width="16" height="60" rx="3" fill="#0a0a0a" stroke="#3a3a3a"/>
 <rect x="263" y="161" width="14" height="49" rx="2" fill="#ef4444" fill-opacity="0.8"/>
 <rect x="284" y="150" width="16" height="60" rx="3" fill="#0a0a0a" stroke="#3a3a3a"/>

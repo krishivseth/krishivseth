@@ -2,10 +2,11 @@
 <rect x="0.5" y="0.5" width="391" height="259" rx="10" fill="#0e0e0e" stroke="#262626"/>
 <text x="20" y="26" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="bold" fill="#e5e5e5" text-anchor="start" >// series_events</text>
 <defs><radialGradient id="gseries" cx="196" cy="260" r="200" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ec4899" stop-opacity="0.1"/><stop offset="1" stop-color="#ec4899" stop-opacity="0"/></radialGradient></defs><rect x="1" y="1" width="100%" height="100%" rx="10" fill="url(#gseries)"/>
-<text x="20" y="54" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >Event planning with group chemistry</text>
-<text x="20" y="71" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >prediction. Create and manage events over</text>
-<text x="20" y="88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >iMessage with a conversational bot and send</text>
-<text x="20" y="105" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >personalised invitations to the right people.</text>
+<text x="20" y="54" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#8a8a8a" text-anchor="start" >Event planning with group chemistry</text>
+<text x="20" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#8a8a8a" text-anchor="start" >prediction. Create and manage events over</text>
+<text x="20" y="90" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#8a8a8a" text-anchor="start" >iMessage with a conversational bot and send</text>
+<text x="20" y="108" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#8a8a8a" text-anchor="start" >personalised invitations to the right</text>
+<text x="20" y="126" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#8a8a8a" text-anchor="start" >people.</text>
 <circle cx="292" cy="169" r="2" fill="#ec4899" fill-opacity="0.9"/>
 <circle cx="333" cy="180" r="2" fill="#ec4899" fill-opacity="0.3"/>
 <circle cx="249" cy="151" r="3" fill="#ec4899" fill-opacity="0.9"/>
