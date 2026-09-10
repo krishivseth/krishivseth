@@ -15,7 +15,7 @@ BG, CARD, LINE, LINE2 = "#0a0a0a", "#0e0e0e", "#242424", "#333333"
 TEXT, MUTED, DIM = "#f0f0f0", "#a3a3a3", "#6b6b6b"
 GREEN, BLUE, ORANGE, PURPLE, RED = "#22c55e", "#60a5fa", "#f97316", "#a855f7", "#ef4444"
 SGREEN, SBLUE, SORANGE, SPURPLE, SRED, SPINK = "#34d17a", "#6fb0ff", "#fb923c", "#c084fc", "#f87171", "#f472b6"
-SOFT = {GREEN: SGREEN, BLUE: SBLUE, ORANGE: SORANGE, PURPLE: SPURPLE, RED: SRED, "#ec4899": SPINK}
+SOFT = {GREEN: SGREEN, BLUE: SGREEN, ORANGE: SGREEN, PURPLE: SGREEN, RED: SGREEN, "#ec4899": SGREEN}
 BODY = "#dedede"
 E = lambda s: html.escape(str(s), quote=True)
 W = 1208  # full row width; GitHub scales it down
@@ -259,7 +259,7 @@ PROJECTS = [
 def project_window(slug, name, cat, color, href, desc, tags, log):
     w, h = 596, 200
     sc = SOFT.get(color, color)
-    body = [defs(wash(f"pw{slug}", color, a=0.11)), f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#pw{slug})"/>']
+    body = [defs(wash(f"pw{slug}", GREEN, a=0.09)), f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#pw{slug})"/>']
     body.append(t(24, 62, name, 22, sc, "bold"))
     for i, ln in enumerate(textwrap.wrap(desc, 66)[:3]):
         body.append(t(24, 88 + i * 17, ln, 12, BODY))
@@ -302,14 +302,13 @@ ROLE_LINES = [
 
 def experience_window():
     w, h = W, 330
-    body = [defs(wash("expw", ORANGE, a=0.07)), f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#expw)"/>', f'<line x1="150" y1="44" x2="150" y2="{h-16}" stroke="{LINE}"/>']
+    body = [defs(wash("expw", BLUE, a=0.06)), f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#expw)"/>', f'<line x1="150" y1="44" x2="150" y2="{h-16}" stroke="{LINE}"/>']
     for i, (when, co, role, hl, c) in enumerate(ROLE_LINES):
         y = 64 + i * 44
         body.append(t(136, y, when, 10, MUTED, anchor="end"))
-        sc = SOFT.get(c, c)
-        body.append(f'<circle cx="150" cy="{y-4}" r="4" fill="{BG}" stroke="{sc}" stroke-width="1.5"/>')
+        body.append(f'<circle cx="150" cy="{y-4}" r="4" fill="{BG}" stroke="{SGREEN}" stroke-width="1.5"/>')
         body.append(t(168, y, co, 12, TEXT, "bold"))
-        body.append(t(168 + cw(co, 12) + 12, y, role, 10.5, sc))
+        body.append(t(168 + cw(co, 12) + 12, y, role, 10.5, SBLUE))
         body.append(t(168, y + 16, hl, 10, "#cfcfcf"))
     window("experience", w, h, "experience", "##", body, right="6 internships · 2024 → 2026", mark="##")
 
@@ -322,10 +321,10 @@ def skills_window():
               ("infra", ORANGE, ["AWS", "GCP", "Terraform", "Kubernetes", "Kinesis", "Redis", "ClickHouse", "Postgres"]),
               ("ai / ml", PURPLE, ["fine-tuning", "RAG / GraphRAG", "agentic systems", "LangSmith", "model sharding"]),
               ("security", RED, ["DevSecOps", "AppSec", "MCP security", "supply chain", "detections"])]
-    body = [defs(wash("skw", PURPLE, a=0.08)), f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#skw)"/>']
+    body = [defs(wash("skw", BLUE, a=0.06)), f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#skw)"/>']
     y = 58
     for k, c, items in groups:
-        body.append(t(24, y, k, 10, SOFT.get(c, c), "bold"))
+        body.append(t(24, y, k, 10, SBLUE, "bold"))
         x = 110
         for it in items:
             ch, cwid = chip(x, y - 14, it, TEXT, size=9.5)
@@ -344,9 +343,8 @@ def research_window():
              ("NYU Langone Health", "Nov 2024 – Jul 2025", PURPLE, "Data infrastructure supporting neuroscience research at a major academic medical center.")]
     for i, (k, when, c, v) in enumerate(items):
         y = 62 + i * 62
-        sc = SOFT.get(c, c)
-        body.append(f'<rect x="24" y="{y-12}" width="2" height="44" rx="1" fill="{sc}" fill-opacity="0.6"/>')
-        body.append(t(38, y, k, 12, sc, "bold")); body.append(t(w - 16, y, when, 9.5, MUTED, anchor="end"))
+        body.append(f'<rect x="24" y="{y-12}" width="2" height="44" rx="1" fill="{SGREEN}" fill-opacity="0.6"/>')
+        body.append(t(38, y, k, 12, SGREEN, "bold")); body.append(t(w - 16, y, when, 9.5, MUTED, anchor="end"))
         for j, ln in enumerate(textwrap.wrap(v, 72)[:2]):
             body.append(t(38, y + 16 + j * 13, ln, 10, "#cfcfcf"))
     window("research", w, h, "research", "//", body, right="3 labs")
@@ -358,7 +356,7 @@ def awards_window():
     wins = [("GRAND PRIZE", "YC Startup School"), ("GRAND PRIZE", "Antler"), ("GRAND PRIZE", "Microsoft x Musa Capital"), ("GRAND PRIZE", "Khosla Ventures x ForgeHacks"), ("PEOPLE'S CHOICE", "Google x HackNYU")]
     colw = (w - 48) / 5
     for i, (k, v) in enumerate(wins):
-        x = 24 + i * colw; c = SBLUE if "PEOPLE" in k else SGREEN
+        x = 24 + i * colw; c = SBLUE
         body.append(f'<rect x="{x:.0f}" y="54" width="{colw-12:.0f}" height="66" rx="8" fill="url(#chipg)" stroke="{LINE2}"/>')
         body.append(f'<rect x="{x+10:.0f}" y="66" width="2" height="42" rx="1" fill="{c}" fill-opacity="0.6"/>')
         body.append(t(x + 22, 80, k, 9, c, "bold"))
@@ -376,7 +374,7 @@ def links_bar():
     for k, v, c in [("web", "krishivseth.com", SGREEN), ("linkedin", "in/krishiv-seth", SBLUE), ("email", "ks7118@nyu.edu", TEXT), ("github", "@krishivseth", TEXT)]:
         b.append(t(x, 27, k, 10, DIM)); x += cw(k, 10) + 8
         b.append(t(x, 27, v, 11, c, "bold")); x += cw(v, 11) + 28
-    c, _ = chip(w - 14, 12, "OPEN TO: SWE · security · infra (2027)", SORANGE, right=True); b.append(c)
+    c, _ = chip(w - 14, 12, "OPEN TO: SWE · security · infra (2027)", SBLUE, right=True); b.append(c)
     b.append("</svg>")
     (OUT / "links.svg").write_text("\n".join(b))
 
