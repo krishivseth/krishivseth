@@ -219,7 +219,20 @@ def links():
            f'<rect x="0.5" y="0.5" width="{w-1}" height="{h-1}" rx="10" fill="{PANEL}" stroke="{BORDER}"/>'] + body + ["</svg>"]
     (OUT / "links.svg").write_text("\n".join(svg))
 
-header(); about(); focus(); stack(); experience(); projects(); awards(); research(); links()
+
+def hero():
+    w, h = 1208, 230
+    body = [glow(300, 230, 520, GREEN, 0.10, "gh"), area(20, 118, w - 40, 96, GREEN, 3, "ah")]
+    body.append(t(20, 64, "Krishiv Seth", 30, TEXT, "bold"))
+    body.append(t(20, 92, "agentic systems · distributed inference · security tooling", 14, MUTED))
+    x = w - 20
+    for sname in ["STATUS: BUILDING", "NYU '27", "NYC"]:
+        c, cw = chip(x, 16, sname, right=True); body.append(c); x -= cw + 10
+    body.append(t(20, h - 14, "CS + Data Science, Cybersecurity minor", 11, MUTED))
+    body.append(t(w - 20, h - 14, "5x hackathon winner", 11, GREEN, "bold", "end"))
+    panel("hero", w, h, "krishiv_seth", body)
+
+hero()
 for slug, name, desc, tags, color, vis in PROJECTS:
     project_card(slug, name, desc, tags, color, vis)
 print("generated", len(list(OUT.glob("*.svg"))))
