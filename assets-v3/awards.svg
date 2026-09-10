@@ -1,31 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1208" height="150" viewBox="0 0 1208 150" role="img" aria-label="hackathons">
-<defs><linearGradient id="winbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#181818"/><stop offset="1" stop-color="#0b0b0b"/></linearGradient><linearGradient id="chipg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a1a1a"/><stop offset="1" stop-color="#0f0f0f"/></linearGradient><radialGradient id="hl" cx="0.12" cy="0" r="0.9"><stop offset="0" stop-color="#ffffff" stop-opacity="0.06"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient><linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop offset="0.7" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.35"/></linearGradient></defs>
+<defs><linearGradient id="winbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#151515"/><stop offset="1" stop-color="#080808"/></linearGradient><linearGradient id="chipg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a1a1a"/><stop offset="1" stop-color="#0d0d0d"/></linearGradient><radialGradient id="hl" cx="0.12" cy="0" r="0.9"><stop offset="0" stop-color="#ffffff" stop-opacity="0.06"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient><linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop offset="0.7" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.35"/></linearGradient></defs>
 <rect x="0.5" y="0.5" width="1207" height="149" rx="10" fill="url(#winbg)" stroke="#2a2a2a"/>
 <rect x="1" y="1" width="1206" height="148" rx="10" fill="url(#hl)"/>
 <rect x="1" y="1" width="1206" height="148" rx="10" fill="url(#shade)"/>
 <line x1="11" y1="1" x2="1197" y2="1" stroke="#ffffff" stroke-opacity="0.08"/>
-<text x="16" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#e5e5e5" text-anchor="start" >## hackathons</text>
-<text x="1192" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="bold" fill="#8a8a8a" text-anchor="end" >5 wins</text>
+<text x="16" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#f0f0f0" text-anchor="start" >## hackathons</text>
+<text x="1192" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="bold" fill="#a3a3a3" text-anchor="end" >5 wins</text>
+<defs><linearGradient id="aww" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22c55e" stop-opacity="0.06"/><stop offset="0.55" stop-color="#22c55e" stop-opacity="0.02"/><stop offset="1" stop-color="#22c55e" stop-opacity="0"/></linearGradient></defs>
+<rect x="1" y="1" width="1206" height="148" rx="10" fill="url(#aww)"/>
 <rect x="24" y="54" width="220" height="66" rx="8" fill="url(#chipg)" stroke="#333333"/>
-<rect x="34" y="66" width="2" height="42" rx="1" fill="#7fcf9a" fill-opacity="0.6"/>
-<text x="46.0" y="80" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="bold" fill="#7fcf9a" text-anchor="start" >GRAND PRIZE</text>
-<text x="46.0" y="98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#e5e5e5" text-anchor="start" >YC Startup School</text>
+<rect x="34" y="66" width="2" height="42" rx="1" fill="#34d17a" fill-opacity="0.6"/>
+<text x="46.0" y="80" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="bold" fill="#34d17a" text-anchor="start" >GRAND PRIZE</text>
+<text x="46.0" y="98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#f0f0f0" text-anchor="start" >YC Startup School</text>
 <rect x="256" y="54" width="220" height="66" rx="8" fill="url(#chipg)" stroke="#333333"/>
-<rect x="266" y="66" width="2" height="42" rx="1" fill="#7fcf9a" fill-opacity="0.6"/>
-<text x="278.0" y="80" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="bold" fill="#7fcf9a" text-anchor="start" >GRAND PRIZE</text>
-<text x="278.0" y="98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#e5e5e5" text-anchor="start" >Antler</text>
+<rect x="266" y="66" width="2" height="42" rx="1" fill="#34d17a" fill-opacity="0.6"/>
+<text x="278.0" y="80" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="bold" fill="#34d17a" text-anchor="start" >GRAND PRIZE</text>
+<text x="278.0" y="98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#f0f0f0" text-anchor="start" >Antler</text>
 <rect x="488" y="54" width="220" height="66" rx="8" fill="url(#chipg)" stroke="#333333"/>
-<rect x="498" y="66" width="2" height="42" rx="1" fill="#7fcf9a" fill-opacity="0.6"/>
-<text x="510.0" y="80" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="bold" fill="#7fcf9a" text-anchor="start" >GRAND PRIZE</text>
-<text x="510.0" y="98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#e5e5e5" text-anchor="start" >Microsoft x Musa</text>
-<text x="510.0" y="111" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#e5e5e5" text-anchor="start" >Capital</text>
+<rect x="498" y="66" width="2" height="42" rx="1" fill="#34d17a" fill-opacity="0.6"/>
+<text x="510.0" y="80" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="bold" fill="#34d17a" text-anchor="start" >GRAND PRIZE</text>
+<text x="510.0" y="98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#f0f0f0" text-anchor="start" >Microsoft x Musa</text>
+<text x="510.0" y="111" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#f0f0f0" text-anchor="start" >Capital</text>
 <rect x="720" y="54" width="220" height="66" rx="8" fill="url(#chipg)" stroke="#333333"/>
-<rect x="730" y="66" width="2" height="42" rx="1" fill="#7fcf9a" fill-opacity="0.6"/>
-<text x="742.0" y="80" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="bold" fill="#7fcf9a" text-anchor="start" >GRAND PRIZE</text>
-<text x="742.0" y="98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#e5e5e5" text-anchor="start" >Khosla Ventures x</text>
-<text x="742.0" y="111" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#e5e5e5" text-anchor="start" >ForgeHacks</text>
+<rect x="730" y="66" width="2" height="42" rx="1" fill="#34d17a" fill-opacity="0.6"/>
+<text x="742.0" y="80" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="bold" fill="#34d17a" text-anchor="start" >GRAND PRIZE</text>
+<text x="742.0" y="98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#f0f0f0" text-anchor="start" >Khosla Ventures x</text>
+<text x="742.0" y="111" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#f0f0f0" text-anchor="start" >ForgeHacks</text>
 <rect x="952" y="54" width="220" height="66" rx="8" fill="url(#chipg)" stroke="#333333"/>
-<rect x="962" y="66" width="2" height="42" rx="1" fill="#8fb4e6" fill-opacity="0.6"/>
-<text x="974.0" y="80" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="bold" fill="#8fb4e6" text-anchor="start" >PEOPLE&#x27;S CHOICE</text>
-<text x="974.0" y="98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#e5e5e5" text-anchor="start" >Google x HackNYU</text>
+<rect x="962" y="66" width="2" height="42" rx="1" fill="#6fb0ff" fill-opacity="0.6"/>
+<text x="974.0" y="80" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="bold" fill="#6fb0ff" text-anchor="start" >PEOPLE&#x27;S CHOICE</text>
+<text x="974.0" y="98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#f0f0f0" text-anchor="start" >Google x HackNYU</text>
 </svg>
