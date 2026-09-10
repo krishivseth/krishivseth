@@ -62,7 +62,7 @@
 
 ## Where I've worked
 
-| | | |
+| Company | Role | Work |
 |---|---|---|
 | **Clear Street** | Security Engineering Intern · Summer 2026 | An app-sec agent harness that reasons over code property graphs to find real vulnerabilities in large codebases, plus the streaming data pipelines the security team's detections and agents run on. |
 | **Forkast** (Antler '25) | Forward Deployed Engineering Intern · 2026 | First engineering intern on the FDE team. Demand forecasting and AI-native revenue intelligence shipped end to end for enterprise clients. |
