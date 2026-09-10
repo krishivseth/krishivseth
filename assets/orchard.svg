@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="392" height="260" viewBox="0 0 392 260" role="img" aria-label="orchard">
+<rect x="0.5" y="0.5" width="391" height="259" rx="10" fill="#0e0e0e" stroke="#262626"/>
+<text x="20" y="26" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="bold" fill="#e5e5e5" text-anchor="start" >// orchard</text>
+<defs><radialGradient id="gorchard" cx="196" cy="260" r="200" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#22c55e" stop-opacity="0.1"/><stop offset="1" stop-color="#22c55e" stop-opacity="0"/></radialGradient></defs><rect x="1" y="1" width="100%" height="100%" rx="10" fill="url(#gorchard)"/>
+<text x="20" y="54" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >Distributed LLM inference across the Apple</text>
+<text x="20" y="71" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >devices you already own. Splits transformer</text>
+<text x="20" y="88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >layers across Macs, iPads and iPhones, streams</text>
+<text x="20" y="105" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >hidden states between them, KV cache included.</text>
+<text x="20" y="122" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >Cluster manager + desktop app.</text>
+<circle cx="322" cy="180" r="9" fill="#000" stroke="#22c55e"/>
+<line x1="322" y1="180" x2="356" y2="180" stroke="#22c55e" stroke-opacity="0.5"/>
+<circle cx="356" cy="180" r="7" fill="#0a0a0a" stroke="#22c55e"/>
+<line x1="322" y1="180" x2="339" y2="209" stroke="#22c55e" stroke-opacity="0.5"/>
+<circle cx="339" cy="209" r="7" fill="#0a0a0a" stroke="#22c55e"/>
+<line x1="322" y1="180" x2="305" y2="209" stroke="#22c55e" stroke-opacity="0.5"/>
+<circle cx="305" cy="209" r="7" fill="#0a0a0a" stroke="#22c55e"/>
+<line x1="322" y1="180" x2="288" y2="180" stroke="#22c55e" stroke-opacity="0.5"/>
+<circle cx="288" cy="180" r="7" fill="#0a0a0a" stroke="#22c55e"/>
+<line x1="322" y1="180" x2="305" y2="151" stroke="#22c55e" stroke-opacity="0.5"/>
+<circle cx="305" cy="151" r="7" fill="#0a0a0a" stroke="#22c55e"/>
+<line x1="322" y1="180" x2="339" y2="151" stroke="#22c55e" stroke-opacity="0.5"/>
+<circle cx="339" cy="151" r="7" fill="#0a0a0a" stroke="#22c55e"/>
+<rect x="20" y="224" width="63" height="22" rx="4" fill="#0a0a0a" stroke="#262626"/><text x="51.5" y="239" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#e5e5e5" text-anchor="middle" >python</text>
+<rect x="91" y="224" width="71" height="22" rx="4" fill="#0a0a0a" stroke="#262626"/><text x="126.5" y="239" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#e5e5e5" text-anchor="middle" >pytorch</text>
+<rect x="170" y="224" width="78" height="22" rx="4" fill="#0a0a0a" stroke="#262626"/><text x="209.0" y="239" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#e5e5e5" text-anchor="middle" >electron</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="392" height="300" viewBox="0 0 392 300" role="img" aria-label="experience">
+<rect x="0.5" y="0.5" width="391" height="299" rx="10" fill="#0e0e0e" stroke="#262626"/>
+<text x="20" y="26" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="bold" fill="#e5e5e5" text-anchor="start" >// experience</text>
+<line x1="66" y1="46" x2="66" y2="270" stroke="#3a3a3a" stroke-width="1"/>
+<text x="54" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="end" >2026</text>
+<circle cx="66" cy="60" r="4" fill="#0e0e0e" stroke="#22c55e" stroke-width="1.5"/>
+<text x="82" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="bold" fill="#e5e5e5" text-anchor="start" >Clear Street</text>
+<text x="372" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="end" >security eng</text>
+<text x="54" y="97" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="end" >2026</text>
+<circle cx="66" cy="93" r="4" fill="#0e0e0e" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="82" y="97" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="bold" fill="#e5e5e5" text-anchor="start" >Forkast</text>
+<text x="372" y="97" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="end" >forward deployed</text>
+<text x="54" y="130" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="end" >2025</text>
+<circle cx="66" cy="126" r="4" fill="#0e0e0e" stroke="#a855f7" stroke-width="1.5"/>
+<text x="82" y="130" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="bold" fill="#e5e5e5" text-anchor="start" >Exar North</text>
+<text x="372" y="130" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="end" >ai software eng</text>
+<text x="54" y="163" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="end" >2025</text>
+<circle cx="66" cy="159" r="4" fill="#0e0e0e" stroke="#f97316" stroke-width="1.5"/>
+<text x="82" y="163" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="bold" fill="#e5e5e5" text-anchor="start" >GoTrust</text>
+<text x="372" y="163" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="end" >ai eng</text>
+<text x="54" y="196" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="end" >2025</text>
+<circle cx="66" cy="192" r="4" fill="#0e0e0e" stroke="#8a8a8a" stroke-width="1.5"/>
+<text x="82" y="196" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="bold" fill="#e5e5e5" text-anchor="start" >Kanlet</text>
+<text x="372" y="196" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="end" >software eng</text>
+<text x="54" y="229" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="end" >2024</text>
+<circle cx="66" cy="225" r="4" fill="#0e0e0e" stroke="#8a8a8a" stroke-width="1.5"/>
+<text x="82" y="229" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="bold" fill="#e5e5e5" text-anchor="start" >Ambee</text>
+<text x="372" y="229" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="end" >data science</text>
+<text x="54" y="262" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="end" >2023</text>
+<circle cx="66" cy="258" r="4" fill="#0e0e0e" stroke="#8a8a8a" stroke-width="1.5"/>
+<text x="82" y="262" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="bold" fill="#e5e5e5" text-anchor="start" >UPL</text>
+<text x="372" y="262" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="end" >cybersecurity</text>
+</svg>

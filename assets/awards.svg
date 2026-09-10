@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="392" height="220" viewBox="0 0 392 220" role="img" aria-label="awards">
+<rect x="0.5" y="0.5" width="391" height="219" rx="10" fill="#0e0e0e" stroke="#262626"/>
+<text x="20" y="26" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="bold" fill="#e5e5e5" text-anchor="start" >// awards</text>
+<rect x="309" y="14" width="63" height="22" rx="4" fill="#0a0a0a" stroke="#22c55e"/><text x="340.5" y="29" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#22c55e" text-anchor="middle" >5 wins</text>
+<rect x="20" y="51" width="4" height="14" rx="2" fill="#22c55e"/>
+<text x="32" y="62" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="bold" fill="#22c55e" text-anchor="start" >GRAND PRIZE</text>
+<text x="140" y="62" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#e5e5e5" text-anchor="start" >YC Startup School</text>
+<rect x="20" y="75" width="4" height="14" rx="2" fill="#22c55e"/>
+<text x="32" y="86" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="bold" fill="#22c55e" text-anchor="start" >GRAND PRIZE</text>
+<text x="140" y="86" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#e5e5e5" text-anchor="start" >Antler</text>
+<rect x="20" y="99" width="4" height="14" rx="2" fill="#22c55e"/>
+<text x="32" y="110" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="bold" fill="#22c55e" text-anchor="start" >GRAND PRIZE</text>
+<text x="140" y="110" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#e5e5e5" text-anchor="start" >Microsoft x Musa Capital</text>
+<rect x="20" y="123" width="4" height="14" rx="2" fill="#22c55e"/>
+<text x="32" y="134" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="bold" fill="#22c55e" text-anchor="start" >GRAND PRIZE</text>
+<text x="140" y="134" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#e5e5e5" text-anchor="start" >Khosla Ventures x ForgeHacks</text>
+<rect x="20" y="147" width="4" height="14" rx="2" fill="#3b82f6"/>
+<text x="32" y="158" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="bold" fill="#3b82f6" text-anchor="start" >PEOPLE&#x27;S CHOICE</text>
+<text x="140" y="158" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#e5e5e5" text-anchor="start" >Google x HackNYU</text>
+<text x="20" y="206" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="normal" fill="#8a8a8a" text-anchor="start" >YC Startup School (flown out) · CodePath Cyber (Honors)</text>
+</svg>
