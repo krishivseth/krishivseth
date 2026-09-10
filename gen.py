@@ -206,9 +206,7 @@ def network(w, h, seed=3, n=42):
 # ================================================================ hero
 def hero():
     w, h = W, 236
-    body = [defs(wash("herow", GREEN, a=0.09), wash("herob", BLUE, "1", "1", "0", "0", a=0.05)),
-            f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#herow)"/><rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#herob)"/>']
-    body += [ln for ln in network(w, h, seed=5, n=30)]
+    body = [defs(wash("herow", GREEN, a=0.06)), f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#herow)"/>']
     body.append(t(24, 92, "KRISHIV SETH", 40, GREEN, "bold", extra='letter-spacing="5"'))
     body.append(f'<line x1="24" y1="106" x2="520" y2="106" stroke="{GREEN}" stroke-opacity="0.5"/>')
     body.append(t(24, 128, "SOFTWARE & SECURITY ENGINEER, AI BUILDER", 12, GREEN))
@@ -216,10 +214,10 @@ def hero():
     body.append(t(24, 174, "Security infra and AppSec at Clear Street, forward deployed at Forkast (Antler '25),", 12, "#cbd8ec"))
     body.append(t(24, 192, "agentic systems at Exar North, GoTrust, Kanlet. Research at OSIRIS Lab, HBS, NYU Langone.", 12, "#cbd8ec"))
     x = w - 16
-    for sname, c in [("● STATUS: ONLINE", GREEN), ("NYU: '27", TEXT), ("LOC: NYC", TEXT)]:
+    for sname, c in [("● STATUS: ONLINE", GREEN), ("NYU: '27", MUTED), ("LOC: NYC", MUTED)]:
         ch, cwid = chip(x, 12, sname, c, right=True); body.append(ch); x -= cwid + 8
     # stat strip
-    stats = [("6", "roles shipped"), ("5x", "hackathon wins"), ("3", "research labs"), ("20+", "models on consumer hw")]
+    stats = [("6", "roles shipped"), ("5x", "hackathon wins"), ("3", "research labs"), ("6", "projects on GitHub")]
     sx = w - 16 - 4 * 150
     for i, (n, lab) in enumerate(stats):
         x = sx + i * 150
@@ -260,9 +258,8 @@ PROJECTS = [
 
 def project_window(slug, name, cat, color, href, desc, tags, log):
     w, h = 596, 200
-    body = [defs(wash(f"pw{slug}", color, a=0.07)), f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#pw{slug})"/>',
-            f'<rect x="1" y="12" width="3" height="{h-24}" rx="1.5" fill="{color}"/>']
-    body.append(t(24, 62, name, 22, color, "bold"))
+    body = []
+    body.append(t(24, 62, name, 22, TEXT, "bold"))
     for i, ln in enumerate(textwrap.wrap(desc, 66)[:3]):
         body.append(t(24, 88 + i * 17, ln, 12, "#c4c4c4"))
     x = 24
@@ -272,7 +269,7 @@ def project_window(slug, name, cat, color, href, desc, tags, log):
     room = int((w - 40 - cw(link, 10)) / 6) - 2
     note = log[0] if len(log[0]) <= room else log[0][:room - 1].rstrip() + "…"
     body.append(t(24, h - 14, note, 10, MUTED))
-    body.append(t(w - 16, h - 14, link, 10, color, "bold", "end"))
+    body.append(t(w - 16, h - 14, link, 10, MUTED, "bold", "end"))
     window(slug, w, h, f"projects / {slug}", "//", body, color, href, right=cat)
 
 
@@ -304,14 +301,13 @@ ROLE_LINES = [
 
 def experience_window():
     w, h = W, 330
-    body = [defs(wash("expw", ORANGE, a=0.05)), f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#expw)"/>']
-    body.append(f'<line x1="150" y1="44" x2="150" y2="{h-16}" stroke="{LINE}"/>')
+    body = [f'<line x1="150" y1="44" x2="150" y2="{h-16}" stroke="{LINE}"/>']
     for i, (when, co, role, hl, c) in enumerate(ROLE_LINES):
         y = 64 + i * 44
         body.append(t(136, y, when, 10, MUTED, anchor="end"))
-        body.append(f'<circle cx="150" cy="{y-4}" r="4" fill="{BG}" stroke="{c}" stroke-width="1.5"/>')
+        body.append(f'<circle cx="150" cy="{y-4}" r="4" fill="{BG}" stroke="{LINE2}" stroke-width="1.5"/>')
         body.append(t(168, y, co, 12, TEXT, "bold"))
-        body.append(t(168 + cw(co, 12) + 12, y, role, 10.5, c))
+        body.append(t(168 + cw(co, 12) + 12, y, role, 10.5, MUTED))
         body.append(t(168, y + 16, hl, 10, "#b5b5b5"))
     window("experience", w, h, "experience", "##", body, right="6 internships · 2024 → 2026", mark="##")
 
@@ -324,10 +320,10 @@ def skills_window():
               ("infra", ORANGE, ["AWS", "GCP", "Terraform", "Kubernetes", "Kinesis", "Redis", "ClickHouse", "Postgres"]),
               ("ai / ml", PURPLE, ["fine-tuning", "RAG / GraphRAG", "agentic systems", "LangSmith", "model sharding"]),
               ("security", RED, ["DevSecOps", "AppSec", "MCP security", "supply chain", "detections"])]
-    body = [defs(wash("skw", PURPLE, a=0.05)), f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#skw)"/>']
+    body = []
     y = 58
     for k, c, items in groups:
-        body.append(t(24, y, k, 10, c, "bold"))
+        body.append(t(24, y, k, 10, MUTED, "bold"))
         x = 110
         for it in items:
             ch, cwid = chip(x, y - 14, it, TEXT, size=9.5)
@@ -340,13 +336,13 @@ def skills_window():
 
 def research_window():
     w, h = 596, 250
-    body = [defs(wash("rsw", GREEN, a=0.05)), f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#rsw)"/>']
+    body = []
     items = [("OSIRIS Lab, NYU", "Mar 2026 – now", GREEN, "Byzantine fault tolerance and Sybil attacks in permissionless federated learning. Tooling for attack surfaces in agentic and decentralised systems."),
              ("Harvard Business School & NYU", "Nov 2024 – Sep 2025", BLUE, "GNNs, NLP models, and data infrastructure for group behavior research across 20M+ X profiles."),
              ("NYU Langone Health", "Nov 2024 – Jul 2025", PURPLE, "Data infrastructure supporting neuroscience research at a major academic medical center.")]
     for i, (k, when, c, v) in enumerate(items):
         y = 62 + i * 62
-        body.append(f'<rect x="24" y="{y-12}" width="3" height="44" rx="1.5" fill="{c}"/>')
+        body.append(f'<rect x="24" y="{y-12}" width="2" height="44" rx="1" fill="{LINE2}"/>')
         body.append(t(38, y, k, 12, TEXT, "bold")); body.append(t(w - 16, y, when, 9.5, MUTED, anchor="end"))
         for j, ln in enumerate(textwrap.wrap(v, 72)[:2]):
             body.append(t(38, y + 16 + j * 13, ln, 10, "#b5b5b5"))
@@ -355,13 +351,13 @@ def research_window():
 
 def awards_window():
     w, h = W, 150
-    body = [defs(wash("aww", GREEN, a=0.05)), f'<rect x="1" y="35" width="{w-2}" height="{h-36}" fill="url(#aww)"/>']
+    body = []
     wins = [("GRAND PRIZE", "YC Startup School"), ("GRAND PRIZE", "Antler"), ("GRAND PRIZE", "Microsoft x Musa Capital"), ("GRAND PRIZE", "Khosla Ventures x ForgeHacks"), ("PEOPLE'S CHOICE", "Google x HackNYU")]
     colw = (w - 48) / 5
     for i, (k, v) in enumerate(wins):
-        x = 24 + i * colw; c = BLUE if "PEOPLE" in k else GREEN
+        x = 24 + i * colw; c = MUTED
         body.append(f'<rect x="{x:.0f}" y="54" width="{colw-12:.0f}" height="66" rx="8" fill="{BG}" stroke="{LINE}"/>')
-        body.append(f'<rect x="{x+10:.0f}" y="66" width="3" height="42" rx="1.5" fill="{c}"/>')
+        body.append(f'<rect x="{x+10:.0f}" y="66" width="2" height="42" rx="1" fill="{LINE2}"/>')
         body.append(t(x + 22, 80, k, 9, c, "bold"))
         for j, ln in enumerate(textwrap.wrap(v, 22)[:2]):
             body.append(t(x + 22, 98 + j * 13, ln, 11, TEXT, "bold"))
@@ -374,10 +370,10 @@ def links_bar():
          defs(vgrad("chipg", "#151515", "#0e0e0e"), vgrad("dockbg", "#161616", "#0c0c0c")),
          f'<rect x="0.5" y="0.5" width="{w-1}" height="{h-1}" rx="10" fill="url(#dockbg)" stroke="{LINE}"/>']
     x = 14
-    for k, v, c in [("web", "krishivseth.com", GREEN), ("linkedin", "in/krishiv-seth", BLUE), ("email", "ks7118@nyu.edu", TEXT), ("github", "@krishivseth", TEXT)]:
+    for k, v, c in [("web", "krishivseth.com", TEXT), ("linkedin", "in/krishiv-seth", TEXT), ("email", "ks7118@nyu.edu", TEXT), ("github", "@krishivseth", TEXT)]:
         b.append(t(x, 27, k, 10, DIM)); x += cw(k, 10) + 8
         b.append(t(x, 27, v, 11, c, "bold")); x += cw(v, 11) + 28
-    c, _ = chip(w - 14, 12, "OPEN TO: SWE · security · infra (2027)", ORANGE, right=True); b.append(c)
+    c, _ = chip(w - 14, 12, "OPEN TO: SWE · security · infra (2027)", GREEN, right=True); b.append(c)
     b.append("</svg>")
     (OUT / "links.svg").write_text("\n".join(b))
 
