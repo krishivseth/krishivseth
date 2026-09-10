@@ -74,15 +74,6 @@
 
 <br>
 
-## Activity
-
-<p align="center">
-  <a href="https://github.com/krishivseth">
-    <img height="165" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=krishivseth&show_icons=true&hide_border=true&hide_title=true&theme=default&bg_color=00000000&hide=contribs&text_color=6b7280&icon_color=6366f1&title_color=6366f1">
-    <img height="165" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=krishivseth&layout=compact&hide_border=true&langs_count=6&theme=default&bg_color=00000000&text_color=6b7280&title_color=6366f1">
-  </a>
-</p>
-
 <p align="center">
   <sub>Currently at Forkast, deploying AI systems with customers. Open to interesting problems in agents, inference, and infrastructure.</sub>
 </p>
