@@ -3,47 +3,38 @@
 <rect x="0.5" y="0.5" width="1207" height="329" rx="10" fill="url(#winbg)" stroke="#242424"/>
 <line x1="11" y1="1" x2="1197" y2="1" stroke="#ffffff" stroke-opacity="0.05"/>
 <text x="16" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#e5e5e5" text-anchor="start" >## experience</text>
-<text x="1192" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="bold" fill="#8a8a8a" text-anchor="end" >6 roles · 2024 → 2026</text>
+<text x="1192" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="bold" fill="#8a8a8a" text-anchor="end" >6 internships · 2024 → 2026</text>
 <defs><linearGradient id="expw" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f97316" stop-opacity="0.05"/><stop offset="0.55" stop-color="#f97316" stop-opacity="0.02"/><stop offset="1" stop-color="#f97316" stop-opacity="0"/></linearGradient></defs>
-<rect x="1" y="35" width="1206" height="294" fill="url(#expw)"/>
-<rect x="14" y="46" width="704" height="24" rx="5" fill="#161616"/>
-<text x="24" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#e5e5e5" text-anchor="start" >Clear Street</text>
-<rect x="150" y="56" width="560" height="10" rx="3" fill="#000" stroke="#1c1c1c"/>
-<rect x="650" y="57" width="60" height="8" rx="2" fill="#22c55e"/>
-<text x="24" y="90" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >Forkast</text>
-<rect x="150" y="82" width="560" height="10" rx="3" fill="#000" stroke="#1c1c1c"/>
-<rect x="550" y="83" width="100" height="8" rx="2" fill="#60a5fa"/>
-<text x="24" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >Exar North</text>
-<rect x="150" y="108" width="560" height="10" rx="3" fill="#000" stroke="#1c1c1c"/>
-<rect x="410" y="109" width="140" height="8" rx="2" fill="#f97316"/>
-<text x="24" y="142" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >GoTrust</text>
-<rect x="150" y="134" width="560" height="10" rx="3" fill="#000" stroke="#1c1c1c"/>
-<rect x="450" y="135" width="40" height="8" rx="2" fill="#a855f7"/>
-<text x="24" y="168" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >Kanlet</text>
-<rect x="150" y="160" width="560" height="10" rx="3" fill="#000" stroke="#1c1c1c"/>
-<rect x="310" y="161" width="100" height="8" rx="2" fill="#ef4444"/>
-<text x="24" y="194" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >Ambee</text>
-<rect x="150" y="186" width="560" height="10" rx="3" fill="#000" stroke="#1c1c1c"/>
-<rect x="170" y="187" width="60" height="8" rx="2" fill="#22c55e"/>
-<text x="190.0" y="228" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#555555" text-anchor="middle" >Jul 24</text>
-<text x="310.0" y="228" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#555555" text-anchor="middle" >Jan 25</text>
-<text x="430.0" y="228" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#555555" text-anchor="middle" >Jul 25</text>
-<text x="550.0" y="228" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#555555" text-anchor="middle" >Jan 26</text>
-<text x="670.0" y="228" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#555555" text-anchor="middle" >Jul 26</text>
-<line x1="724" y1="48" x2="724" y2="316" stroke="#242424"/>
-<rect x="736" y="52" width="3" height="260" rx="1.5" fill="#22c55e"/>
-<text x="750" y="68" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="bold" fill="#22c55e" text-anchor="start" >Clear Street</text>
-<text x="750" y="86" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="bold" fill="#e5e5e5" text-anchor="start" >Cybersecurity Data Engineering &amp;</text>
-<text x="750" y="100" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="bold" fill="#e5e5e5" text-anchor="start" >Application Security Engineering Intern</text>
-<text x="750" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#8a8a8a" text-anchor="start" >Jun 2026 – Aug 2026 · New York, NY</text>
-<text x="750" y="136" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#c4c4c4" text-anchor="start" >• Rebuilt the security team&#x27;s log ingestion pipeline in Go</text>
-<text x="760" y="149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#c4c4c4" text-anchor="start" >on Kinesis: 80% lower latency, 3 TB/day across 10+</text>
-<text x="760" y="162" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#c4c4c4" text-anchor="start" >sources, p95 under 4s at 100+ concurrent queries.</text>
-<text x="750" y="180" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#c4c4c4" text-anchor="start" >• Built an app-sec agent harness over Joern code property</text>
-<text x="760" y="193" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#c4c4c4" text-anchor="start" >graphs and a Neptune knowledge graph, cutting false</text>
-<text x="760" y="206" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#c4c4c4" text-anchor="start" >positives 45% on a 120-finding benchmark.</text>
-<text x="750" y="224" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#c4c4c4" text-anchor="start" >• Swept 102 Java services and traced 473 findings to 5</text>
-<text x="760" y="237" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#c4c4c4" text-anchor="start" >systemic root causes.</text>
-<text x="24" y="314" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="normal" fill="#8a8a8a" text-anchor="start" >6 internships · 2024 → 2026</text>
-<text x="710" y="314" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="normal" fill="#555555" text-anchor="end" >tap a row on the site for details</text>
+<rect x="1" y="1" width="1206" height="328" rx="10" fill="url(#expw)"/>
+<line x1="150" y1="44" x2="150" y2="314" stroke="#242424"/>
+<text x="136" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="normal" fill="#8a8a8a" text-anchor="end" >Jun–Aug 2026</text>
+<circle cx="150" cy="60" r="4" fill="#0a0a0a" stroke="#22c55e" stroke-width="1.5"/>
+<text x="168" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="bold" fill="#e5e5e5" text-anchor="start" >Clear Street</text>
+<text x="266.4" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#22c55e" text-anchor="start" >Cybersecurity Data Engineering &amp; AppSec Intern</text>
+<text x="168" y="80" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="normal" fill="#b5b5b5" text-anchor="start" >Go log pipeline on Kinesis (3 TB/day, 80% lower latency); app-sec agent harness over code property graphs, 45% fewer false positives</text>
+<text x="136" y="108" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="normal" fill="#8a8a8a" text-anchor="end" >Jan–May 2026</text>
+<circle cx="150" cy="104" r="4" fill="#0a0a0a" stroke="#60a5fa" stroke-width="1.5"/>
+<text x="168" y="108" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="bold" fill="#e5e5e5" text-anchor="start" >Forkast (Antler &#x27;25)</text>
+<text x="324.0" y="108" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#60a5fa" text-anchor="start" >Forward Deployed Engineering Intern</text>
+<text x="168" y="124" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="normal" fill="#b5b5b5" text-anchor="start" >XGBoost demand forecasts for a Michelin-starred group (14.2% MAPE); full-stack competitor pricing app over containerized agents</text>
+<text x="136" y="152" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="normal" fill="#8a8a8a" text-anchor="end" >Jun–Dec 2025</text>
+<circle cx="150" cy="148" r="4" fill="#0a0a0a" stroke="#f97316" stroke-width="1.5"/>
+<text x="168" y="152" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="bold" fill="#e5e5e5" text-anchor="start" >Exar North Group</text>
+<text x="295.2" y="152" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#f97316" text-anchor="start" >AI &amp; Software Engineering Intern</text>
+<text x="168" y="168" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="normal" fill="#b5b5b5" text-anchor="start" >Agentic research platform producing 300+ write-ups a week; serverless newsletter agent for 6,000+ accounts</text>
+<text x="136" y="196" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="normal" fill="#8a8a8a" text-anchor="end" >Aug–Sep 2025</text>
+<circle cx="150" cy="192" r="4" fill="#0a0a0a" stroke="#a855f7" stroke-width="1.5"/>
+<text x="168" y="196" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="bold" fill="#e5e5e5" text-anchor="start" >GoTrust</text>
+<text x="230.4" y="196" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#a855f7" text-anchor="start" >AI Engineering Intern</text>
+<text x="168" y="212" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="normal" fill="#b5b5b5" text-anchor="start" >GraphRAG NL-to-SQL on Llama 3.2 3B across a 200+ table schema, 92% accuracy at 80% lower inference cost</text>
+<text x="136" y="240" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="normal" fill="#8a8a8a" text-anchor="end" >Jan–May 2025</text>
+<circle cx="150" cy="236" r="4" fill="#0a0a0a" stroke="#ef4444" stroke-width="1.5"/>
+<text x="168" y="240" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="bold" fill="#e5e5e5" text-anchor="start" >Kanlet Inc.</text>
+<text x="259.2" y="240" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#ef4444" text-anchor="start" >Software Engineering Intern</text>
+<text x="168" y="256" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="normal" fill="#b5b5b5" text-anchor="start" >Full-stack competitor tracking in the CRM: FastAPI over 15 sources, React lead view, 300+ qualified leads</text>
+<text x="136" y="284" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="normal" fill="#8a8a8a" text-anchor="end" >Jun–Aug 2024</text>
+<circle cx="150" cy="280" r="4" fill="#0a0a0a" stroke="#22c55e" stroke-width="1.5"/>
+<text x="168" y="284" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="bold" fill="#e5e5e5" text-anchor="start" >Ambee</text>
+<text x="216.0" y="284" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#22c55e" text-anchor="start" >Data Science &amp; Engineering Intern</text>
+<text x="168" y="300" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="normal" fill="#b5b5b5" text-anchor="start" >Time-series ILI risk models on AWS from 20 years of GIS data: 0.91 F1, 0.94 R²</text>
 </svg>

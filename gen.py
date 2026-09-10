@@ -225,7 +225,7 @@ def hero():
         x = sx + i * 150
         body.append(f'<rect x="{x}" y="44" width="140" height="56" rx="8" fill="{BG}" stroke="{LINE}"/>')
         body.append(t(x + 12, 70, n, 20, TEXT, "bold")); body.append(t(x + 12, 88, lab, 9.5, MUTED))
-    body.append(t(24, h - 14, "krishivseth.com · terminal-first portfolio", 10, MUTED)); body.append(t(w - 16, h - 14, "type 'help' there", 10, DIM, anchor="end"))
+    body.append(t(24, h - 14, "krishivseth.com · terminal-first portfolio", 10, MUTED)); body.append(t(w - 16, h - 14, "everything below is on GitHub", 10, DIM, anchor="end"))
     window("hero", w, h, "krishiv_seth", "◈", body)
 
 
@@ -258,43 +258,22 @@ PROJECTS = [
 ]
 
 
-def hash7(s):
-    h = 2166136261
-    for ch in s:
-        h ^= ord(ch); h = (h * 16777619) & 0xFFFFFFFF
-    return f"{h:08x}"[:7]
-
-
 def project_window(slug, name, cat, color, href, desc, tags, log):
-    w, h = 596, 250
-    body = [defs(wash(f"pw{slug}", color, a=0.07)), f'<rect x="1" y="35" width="{w-2}" height="{h-36}" fill="url(#pw{slug})"/>']
-    # tree
-    body.append(f'<rect x="1" y="35" width="150" height="{h-36}" fill="{BG}" fill-opacity="0.6"/><line x1="151" y1="35" x2="151" y2="{h-1}" stroke="{LINE}"/>')
-    body.append(t(14, 56, "~/projects", 9.5, DIM))
-    for i, (s2, _, _, c2, *_r) in enumerate(PROJECTS):
-        y = 78 + i * 24
-        sel = s2 == slug
-        if sel:
-            body.append(f'<rect x="8" y="{y-15}" width="136" height="22" rx="5" fill="#161616"/>')
-        body.append(f'<circle cx="20" cy="{y-4}" r="3" fill="{c2}"/>')
-        body.append(t(30, y, s2 + "/", 10.5, TEXT if sel else MUTED, "bold" if sel else "normal"))
-    # detail
-    dx = 168
-    body.append(t(dx, 56, f"~/projects/{slug}/README.md", 9.5, DIM))
-    body.append(t(dx, 82, name, 19, color, "bold"))
-    for i, ln in enumerate(textwrap.wrap(desc, 58)[:3]):
-        body.append(t(dx, 104 + i * 16, ln, 11, "#c4c4c4"))
-    x = dx
+    w, h = 596, 200
+    body = [defs(wash(f"pw{slug}", color, a=0.07)), f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#pw{slug})"/>',
+            f'<rect x="1" y="12" width="3" height="{h-24}" rx="1.5" fill="{color}"/>']
+    body.append(t(24, 62, name, 22, color, "bold"))
+    for i, ln in enumerate(textwrap.wrap(desc, 66)[:3]):
+        body.append(t(24, 88 + i * 17, ln, 12, "#c4c4c4"))
+    x = 24
     for tag in tags:
-        c, cwid = chip(x, 156, tag, TEXT, size=9.5); body.append(c); x += cwid + 6
-    # git log
-    body.append(f'<rect x="{dx}" y="186" width="{w-dx-14}" height="52" rx="6" fill="{BG}" stroke="{LINE}"/>')
-    body.append(t(dx + 10, 202, "$ git log --oneline", 9.5, DIM))
-    for i, line in enumerate(log[:2]):
-        y = 216 + i * 14
-        body.append(t(dx + 10, y, hash7(name + line), 9.5, MUTED, "bold"))
-        body.append(t(dx + 66, y, line[:58], 9.5, "#c4c4c4"))
-    window(slug, w, h, f"projects / {slug}", "//", body, color, href, right=cat, mark="//")
+        c, cwid = chip(x, h - 52, tag, TEXT, size=9.5); body.append(c); x += cwid + 6
+    link = "github.com/krishivseth/" + href.rsplit("/", 1)[1] + " ↗"
+    room = int((w - 40 - cw(link, 10)) / 6) - 2
+    note = log[0] if len(log[0]) <= room else log[0][:room - 1].rstrip() + "…"
+    body.append(t(24, h - 14, note, 10, MUTED))
+    body.append(t(w - 16, h - 14, link, 10, color, "bold", "end"))
+    window(slug, w, h, f"projects / {slug}", "//", body, color, href, right=cat)
 
 
 # ================================================================ experience window
@@ -313,88 +292,64 @@ BULLETS = [
 ]
 
 
-def mi(y, m):
-    return (y - 2024) * 12 + (m - 1)
+ROLE_LINES = [
+    ("Jun–Aug 2026", "Clear Street", "Cybersecurity Data Engineering & AppSec Intern", "Go log pipeline on Kinesis (3 TB/day, 80% lower latency); app-sec agent harness over code property graphs, 45% fewer false positives", GREEN),
+    ("Jan–May 2026", "Forkast (Antler '25)", "Forward Deployed Engineering Intern", "XGBoost demand forecasts for a Michelin-starred group (14.2% MAPE); full-stack competitor pricing app over containerized agents", BLUE),
+    ("Jun–Dec 2025", "Exar North Group", "AI & Software Engineering Intern", "Agentic research platform producing 300+ write-ups a week; serverless newsletter agent for 6,000+ accounts", ORANGE),
+    ("Aug–Sep 2025", "GoTrust", "AI Engineering Intern", "GraphRAG NL-to-SQL on Llama 3.2 3B across a 200+ table schema, 92% accuracy at 80% lower inference cost", PURPLE),
+    ("Jan–May 2025", "Kanlet Inc.", "Software Engineering Intern", "Full-stack competitor tracking in the CRM: FastAPI over 15 sources, React lead view, 300+ qualified leads", RED),
+    ("Jun–Aug 2024", "Ambee", "Data Science & Engineering Intern", "Time-series ILI risk models on AWS from 20 years of GIS data: 0.91 F1, 0.94 R²", GREEN),
+]
 
 
 def experience_window():
     w, h = W, 330
-    S, En = mi(2024, 5), mi(2026, 9)
-    pct = lambda v: (v - S) / (En - S)
-    body = [defs(wash("expw", ORANGE, a=0.05)), f'<rect x="1" y="35" width="{w-2}" height="{h-36}" fill="url(#expw)"/>']
-    gx, gw = 150, 560
-    for i, (co, role, s, e, c) in enumerate(ROLES):
-        y = 60 + i * 26
-        if i == 0:
-            body.append(f'<rect x="14" y="{y-14}" width="{gx+gw-6}" height="24" rx="5" fill="#161616"/>')
-        body.append(t(24, y + 4, co.replace(" (Antler '25)", "").replace(" Inc.", "").replace(" Group", ""), 11, TEXT if i == 0 else MUTED, "bold" if i == 0 else "normal"))
-        body.append(f'<rect x="{gx}" y="{y-4}" width="{gw}" height="10" rx="3" fill="#000" stroke="#1c1c1c"/>')
-        x0 = gx + pct(mi(*s)) * gw; x1 = gx + pct(mi(*e) + 1) * gw
-        body.append(f'<rect x="{x0:.0f}" y="{y-3}" width="{x1-x0:.0f}" height="8" rx="2" fill="{c}"/>')
-    for m, lab in [(mi(2024, 7), "Jul 24"), (mi(2025, 1), "Jan 25"), (mi(2025, 7), "Jul 25"), (mi(2026, 1), "Jan 26"), (mi(2026, 7), "Jul 26")]:
-        body.append(t(gx + pct(m) * gw, 228, lab, 9.5, DIM, anchor="middle"))
-    # detail
-    dx = 740
-    body.append(f'<line x1="{dx-16}" y1="48" x2="{dx-16}" y2="{h-14}" stroke="{LINE}"/>')
-    body.append(f'<rect x="{dx-4}" y="52" width="3" height="{h-70}" rx="1.5" fill="{GREEN}"/>')
-    body.append(t(dx + 10, 68, "Clear Street", 15, GREEN, "bold"))
-    body.append(t(dx + 10, 86, "Cybersecurity Data Engineering &", 10.5, TEXT, "bold")); body.append(t(dx + 10, 100, "Application Security Engineering Intern", 10.5, TEXT, "bold"))
-    body.append(t(dx + 10, 116, "Jun 2026 – Aug 2026 · New York, NY", 9.5, MUTED))
-    y = 136
-    for bl in BULLETS:
-        for j, ln in enumerate(textwrap.wrap(bl, 56)[:3]):
-            body.append(t(dx + 10 + (0 if j == 0 else 10), y, ("• " if j == 0 else "") + ln, 9.5, "#c4c4c4"))
-            y += 13
-        y += 5
-    body.append(t(24, h - 16, "6 internships · 2024 → 2026", 10, MUTED)); body.append(t(gx + gw, h - 16, "tap a row on the site for details", 10, DIM, anchor="end"))
-    window("experience", w, h, "experience", "##", body, right="6 roles · 2024 → 2026", mark="##")
+    body = [defs(wash("expw", ORANGE, a=0.05)), f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#expw)"/>']
+    body.append(f'<line x1="150" y1="44" x2="150" y2="{h-16}" stroke="{LINE}"/>')
+    for i, (when, co, role, hl, c) in enumerate(ROLE_LINES):
+        y = 64 + i * 44
+        body.append(t(136, y, when, 10, MUTED, anchor="end"))
+        body.append(f'<circle cx="150" cy="{y-4}" r="4" fill="{BG}" stroke="{c}" stroke-width="1.5"/>')
+        body.append(t(168, y, co, 12, TEXT, "bold"))
+        body.append(t(168 + cw(co, 12) + 12, y, role, 10.5, c))
+        body.append(t(168, y + 16, hl, 10, "#b5b5b5"))
+    window("experience", w, h, "experience", "##", body, right="6 internships · 2024 → 2026", mark="##")
 
 
 # ================================================================ skills, research, awards windows
 def skills_window():
     w, h = 596, 250
-    groups = [("lang", 9, GREEN, "Python · Go · Java · Scala · TS · C · SQL · Bash"), ("web", 9, BLUE, "React · Next.js · Node · FastAPI · Flask"), ("infra", 17, ORANGE, "AWS · GCP · Terraform · K8s · Kinesis · Redis · ClickHouse"), ("ai/ml", 9, PURPLE, "fine-tuning · RAG/GraphRAG · agentic systems · LangSmith"), ("sec", 7, RED, "DevSecOps · AppSec · MCP security · supply chain")]
-    mx = max(g[1] for g in groups)
-    body = [defs(wash("skw", PURPLE, a=0.05)), f'<rect x="1" y="35" width="{w-2}" height="{h-36}" fill="url(#skw)"/>']
-    bx, bw_, bh, gap = 24, 40, 140, 14
-    for i, (k, n, c, _) in enumerate(groups):
-        x = bx + i * (bw_ + gap)
-        body.append(f'<rect x="{x}" y="66" width="{bw_}" height="{bh}" rx="4" fill="#000" stroke="{LINE}"/>')
-        fh = bh * n / mx
-        body.append(f'<rect x="{x+1}" y="{66 + bh - fh:.0f}" width="{bw_-2}" height="{fh:.0f}" rx="2" fill="{c}"/>')
-        body.append(t(x + bw_ / 2, 58, str(n), 10.5, c, "bold", "middle"))
-        body.append(t(x + bw_ / 2, 222, k, 9.5, MUTED, anchor="middle"))
-    lx = 310
-    body.append(f'<line x1="{lx-14}" y1="48" x2="{lx-14}" y2="{h-14}" stroke="{LINE}"/>')
-    for i, (k, n, c, desc) in enumerate(groups):
-        y = 66 + i * 36
-        body.append(t(lx, y, k, 10.5, c, "bold"))
-        for j, ln in enumerate(textwrap.wrap(desc, 40)[:2]):
-            body.append(t(lx, y + 13 + j * 12, ln, 9.5, "#c4c4c4"))
+    groups = [("languages", GREEN, ["Python", "Go", "Java", "Scala", "TypeScript", "C", "SQL", "Bash"]),
+              ("full-stack", BLUE, ["React", "Next.js", "Node.js", "FastAPI", "Flask", "React Native"]),
+              ("infra", ORANGE, ["AWS", "GCP", "Terraform", "Kubernetes", "Kinesis", "Redis", "ClickHouse", "Postgres"]),
+              ("ai / ml", PURPLE, ["fine-tuning", "RAG / GraphRAG", "agentic systems", "LangSmith", "model sharding"]),
+              ("security", RED, ["DevSecOps", "AppSec", "MCP security", "supply chain", "detections"])]
+    body = [defs(wash("skw", PURPLE, a=0.05)), f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#skw)"/>']
+    y = 58
+    for k, c, items in groups:
+        body.append(t(24, y, k, 10, c, "bold"))
+        x = 110
+        for it in items:
+            ch, cwid = chip(x, y - 14, it, TEXT, size=9.5)
+            if x + cwid > w - 16:
+                break
+            body.append(ch); x += cwid + 6
+        y += 38
     window("skills", w, h, "skills", "//", body, right="51 entries")
 
 
 def research_window():
     w, h = 596, 250
-    body = [defs(wash("rsw", GREEN, a=0.05)), f'<rect x="1" y="35" width="{w-2}" height="{h-36}" fill="url(#rsw)"/>']
-    cx, cy = 110, 140
-    nodes = [("OSIRIS", -90, GREEN), ("HBS", 30, BLUE), ("NYUL", 150, PURPLE)]
-    for name, ang, c in nodes:
-        a = math.radians(ang); x, y = cx + math.cos(a) * 64, cy + math.sin(a) * 64
-        body.append(f'<line x1="{cx}" y1="{cy}" x2="{x:.0f}" y2="{y:.0f}" stroke="{c}" stroke-opacity="0.5"/>')
-        body.append(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="18" fill="{BG}" stroke="{c}" stroke-width="1.5"/>')
-        body.append(t(x, y + 3.5, name, 9, c, "bold", "middle"))
-    body.append(f'<circle cx="{cx}" cy="{cy}" r="14" fill="#000" stroke="{LINE2}" stroke-width="1.5"/>'); body.append(t(cx, cy + 3.5, "me", 8, MUTED, anchor="middle"))
-    items = [("OSIRIS Lab (NYU)", GREEN, "Byzantine fault tolerance and Sybil attacks in permissionless FL. Attack surfaces in agentic and decentralised systems."),
-             ("Harvard Business School & NYU", BLUE, "GNNs, NLP, and data infrastructure for group behavior across 20M+ X profiles."),
-             ("NYU Langone Health", PURPLE, "Data infrastructure supporting neuroscience research.")]
-    lx = 236
-    body.append(f'<line x1="{lx-14}" y1="48" x2="{lx-14}" y2="{h-14}" stroke="{LINE}"/>')
-    for i, (k, c, v) in enumerate(items):
-        y = 64 + i * 60
-        body.append(t(lx, y, k, 11, c, "bold"))
-        for j, ln in enumerate(textwrap.wrap(v, 50)[:2]):
-            body.append(t(lx, y + 15 + j * 13, ln, 9.5, "#c4c4c4"))
+    body = [defs(wash("rsw", GREEN, a=0.05)), f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#rsw)"/>']
+    items = [("OSIRIS Lab, NYU", "Mar 2026 – now", GREEN, "Byzantine fault tolerance and Sybil attacks in permissionless federated learning. Tooling for attack surfaces in agentic and decentralised systems."),
+             ("Harvard Business School & NYU", "Nov 2024 – Sep 2025", BLUE, "GNNs, NLP models, and data infrastructure for group behavior research across 20M+ X profiles."),
+             ("NYU Langone Health", "Nov 2024 – Jul 2025", PURPLE, "Data infrastructure supporting neuroscience research at a major academic medical center.")]
+    for i, (k, when, c, v) in enumerate(items):
+        y = 62 + i * 62
+        body.append(f'<rect x="24" y="{y-12}" width="3" height="44" rx="1.5" fill="{c}"/>')
+        body.append(t(38, y, k, 12, TEXT, "bold")); body.append(t(w - 16, y, when, 9.5, MUTED, anchor="end"))
+        for j, ln in enumerate(textwrap.wrap(v, 72)[:2]):
+            body.append(t(38, y + 16 + j * 13, ln, 10, "#b5b5b5"))
     window("research", w, h, "research", "//", body, right="3 labs")
 
 
