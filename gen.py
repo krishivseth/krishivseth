@@ -123,17 +123,20 @@ def projects():
     panel("projects", w, h, "projects", body, "##")
 
 # ---------------------------------------------------------------- project cards (3 per row)
-def project_card(slug, name, desc, tags, color, visual):
-    w, h = NARROW, 260
-    body = [glow(196, 260, 200, color, 0.10, f"g{slug}")]
-    lines = textwrap.wrap(desc, 44)[:5]
-    for i, ln in enumerate(lines):
-        body.append(t(20, 54 + i * 18, ln, 12, MUTED))
-    body += visual(color)
-    x = 20
+def project_card(slug, name, desc, tags, color, visual=None):
+    w, h = 596, 176
+    body = [glow(120, 176, 260, color, 0.14, f"g{slug}")]
+    body.append(f'<rect x="0" y="0" width="5" height="{h}" rx="2.5" fill="{color}"/>')
+    body.append(t(24, 58, name, 24, TEXT, "bold"))
+    for i, ln in enumerate(textwrap.wrap(desc, 62)[:2]):
+        body.append(t(24, 90 + i * 22, ln, 15, MUTED))
+    x = 24
     for tag in tags:
-        c, cw = chip(x, h - 36, tag, TEXT); body.append(c); x += cw + 8
-    panel(slug, w, h, name, body)
+        c, cw = chip(x, h - 40, tag, TEXT); body.append(c); x += cw + 8
+    body.append(t(w - 20, h - 25, "↗", 16, color, anchor="end"))
+    svg = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{E(name)}">',
+           f'<rect x="0.5" y="0.5" width="{w-1}" height="{h-1}" rx="10" fill="{PANEL}" stroke="{BORDER}"/>'] + body + ["</svg>"]
+    (OUT / f"{slug}.svg").write_text("\n".join(svg))
 
 def vis_nodes(color):
     cx, cy = NARROW - 70, 180; out = [f'<circle cx="{cx}" cy="{cy}" r="9" fill="#000" stroke="{color}"/>']
@@ -174,12 +177,12 @@ def vis_dots(color):
     return out
 
 PROJECTS = [
-    ("orchard", "orchard", "Distributed LLM inference across the Apple devices you already own. Splits transformer layers across Macs, iPads and iPhones, streams hidden states between them, KV cache included. Cluster manager + desktop app.", ["python", "pytorch", "electron"], GREEN, vis_nodes),
-    ("ouroboros", "ouroboros", "Runtime security for AI agents and MCP servers. Classifies tool calls against context-aware threat models, AST analysis for tool poisoning and rug-pulls, sandboxing, dependency provenance scoring.", ["python", "security", "mcp"], RED, vis_bars),
-    ("trevor", "trevor_ai", "Phone-callable investment agent. An orchestrator voice agent fans out sub-agents for portfolio analysis, research and trade execution, with a dashboard that updates live during the call.", ["typescript", "fastapi", "voice"], PURPLE, vis_pipeline),
-    ("watchman", "watchman", "A fleet of security cameras you can question in plain English. Continuously indexes footage and answers 'was anyone at the door in the last few minutes?' with the matching frames.", ["typescript", "spacetimedb", "gemini"], ORANGE, vis_heatmap),
-    ("rent", "what_the_rent", "Chrome extensions for StreetEasy and Zillow that surface the hidden costs of a rental in NYC and SF: utilities, transit, safety. Safe route mapping from public building and 311 data.", ["python", "next.js", "extension"], BLUE, vis_sparkline),
-    ("series", "series_events", "Event planning with group chemistry prediction. Create and manage events over iMessage with a conversational bot and send personalised invitations to the right people.", ["typescript", "imessage", "ai"], "#ec4899", vis_dots),
+    ("orchard", "Orchard", "Distributed LLM inference across the Apple devices you already own. Layer-split sharding with a KV cache.", ["python", "pytorch", "electron"], GREEN, vis_nodes),
+    ("ouroboros", "Ouroboros", "Runtime security for AI agents and MCP servers. Catches tool poisoning and rug-pulls before they run.", ["python", "security", "mcp"], RED, vis_bars),
+    ("trevor", "Trevor AI", "A phone-callable investment agent. Call it, and sub-agents research, analyse and trade while you talk.", ["typescript", "fastapi", "voice"], PURPLE, vis_pipeline),
+    ("watchman", "Watchman", "Ask a fleet of security cameras questions in plain English and get the matching frames back.", ["typescript", "spacetimedb", "gemini"], ORANGE, vis_heatmap),
+    ("rent", "What The Rent?!", "Chrome extensions for StreetEasy and Zillow that surface the hidden costs of a rental in NYC and SF.", ["python", "next.js", "extension"], BLUE, vis_sparkline),
+    ("series", "Series Events", "Event planning with group chemistry prediction, run entirely over iMessage.", ["typescript", "imessage", "ai"], "#ec4899", vis_dots),
 ]
 
 # ---------------------------------------------------------------- row: awards / research / links
