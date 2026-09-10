@@ -7,7 +7,7 @@ Run: python3 gen.py
 """
 import html, math, pathlib, random, textwrap
 
-OUT = pathlib.Path(__file__).parent / "assets-v3"
+OUT = pathlib.Path(__file__).parent / "assets-v4"
 OUT.mkdir(exist_ok=True)
 MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace"
 SANS = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
