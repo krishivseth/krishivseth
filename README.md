@@ -1,13 +1,7 @@
-<h1 align="center">Krishiv Seth</h1>
-
-<p align="center">
-  CS &amp; Data Science at NYU Courant, Class of 2027, Cybersecurity minor &nbsp;·&nbsp; New York
-</p>
-
-<p align="center">
-  I build agentic systems, distributed inference, and security tooling. 5x hackathon winner.<br>
-  Most recently security engineering at Clear Street and forward deployed engineering at Forkast.
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <img alt="Krishiv Seth" src="assets/banner-light.svg" width="100%">
+</picture>
 
 <p align="center">
   <a href="https://krishivseth.com"><img alt="Website" src="https://img.shields.io/badge/krishivseth.com-111?style=for-the-badge&logo=safari&logoColor=white"></a>
@@ -15,50 +9,16 @@
   <a href="https://github.com/krishivseth?tab=repositories"><img alt="Repositories" src="https://img.shields.io/badge/Projects-111?style=for-the-badge&logo=github&logoColor=white"></a>
 </p>
 
-<br>
-
 ## What I'm building
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/krishivseth/Orchard">Orchard</a></h3>
-      <p>Distributed LLM inference across the Apple devices you already own. Splits a model's transformer layers across Macs, iPads and iPhones and streams hidden states between them, with a KV cache, a cluster manager, and a desktop app on top. Top 10% of Y Combinator applicants.</p>
-      <p><code>Python</code> <code>PyTorch</code> <code>FastAPI</code> <code>React</code> <code>Electron</code></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/krishivseth/Ouroboros">Ouroboros</a></h3>
-      <p>Runtime security for AI agents and MCP servers. Classifies tool calls against context-aware threat models, uses AST analysis to catch tool poisoning and rug-pull redefinitions, sandboxes untrusted servers, and scores dependency provenance.</p>
-      <p><code>Python</code> <code>Security</code> <code>MCP</code></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/krishivseth/TrevorAI">Trevor AI</a></h3>
-      <p>A phone-callable investment agent. An orchestrator voice agent fans out sub-agents for portfolio analysis, research, and trade execution in real time, with a dashboard that updates live during the call.</p>
-      <p><code>TypeScript</code> <code>FastAPI</code> <code>Voice agents</code></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/krishivseth/watchman">Watchman</a></h3>
-      <p>Turns a fleet of security cameras into a live feed you can question in plain English. Continuously indexes footage and answers "was anyone at the door in the last few minutes?" with the matching frames.</p>
-      <p><code>TypeScript</code> <code>SpacetimeDB</code> <code>Gemini</code></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/krishivseth/where2liv">What The Rent?!</a></h3>
-      <p>Chrome extensions for StreetEasy and Zillow that surface the hidden costs of a rental in NYC and SF: utilities, transit, and safety, with neighbourhood insights and safe route mapping built from public building and 311 data.</p>
-      <p><code>Python</code> <code>Next.js</code> <code>Chrome extension</code></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/krishivseth/S_Events">Series Events</a></h3>
-      <p>Event planning with group chemistry prediction. Create and manage events over iMessage with a conversational bot and send personalised invitations.</p>
-      <p><code>TypeScript</code> <code>iMessage</code> <code>AI</code></p>
-    </td>
-  </tr>
-</table>
-
-<br>
+<p>
+  <a href="https://github.com/krishivseth/Orchard"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/orchard-dark.svg"><img alt="Orchard" src="assets/orchard-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/krishivseth/Ouroboros"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/ouroboros-dark.svg"><img alt="Ouroboros" src="assets/ouroboros-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/krishivseth/TrevorAI"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/trevor-dark.svg"><img alt="Trevor AI" src="assets/trevor-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/krishivseth/watchman"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/watchman-dark.svg"><img alt="Watchman" src="assets/watchman-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/krishivseth/where2liv"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/rent-dark.svg"><img alt="What The Rent?!" src="assets/rent-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/krishivseth/S_Events"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/series-dark.svg"><img alt="Series Events" src="assets/series-light.svg" width="49%"></picture></a>
+</p>
 
 ## Where I've worked
 
@@ -72,19 +32,26 @@
 | **Ambee** | Data Science Intern · 2024 | Time-series models for public health risk forecasting and revenue planning. |
 | **UPL** | Cybersecurity Intern · 2023 | Threat intelligence and incident response on the IS governance team. |
 
-## Research
-
-- **NYU OSIRIS Lab**: Byzantine fault tolerance, and tooling for emerging attack surfaces in agentic AI and blockchain systems.
-- **Harvard Business School**: NLP models and data infrastructure for measuring group behaviour on social media.
-- **NYU Langone Health**: data infrastructure supporting neuroscience research.
-
-## Awards
-
-- **Grand Prize** at Y Combinator Startup School, Antler, Microsoft x Musa Capital, and Khosla Ventures x ForgeHacks.
-- **People's Choice** at Google x HackNYU.
-- Y Combinator Startup School (flown out) · CodePath Cybersecurity (Honors) · AI in Education VIP.
-
-<br>
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Research</h3>
+      <ul>
+        <li><b>NYU OSIRIS Lab</b>: Byzantine fault tolerance, and tooling for emerging attack surfaces in agentic AI and blockchain systems.</li>
+        <li><b>Harvard Business School</b>: NLP models and data infrastructure for measuring group behaviour on social media.</li>
+        <li><b>NYU Langone Health</b>: data infrastructure supporting neuroscience research.</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Awards</h3>
+      <ul>
+        <li><b>Grand Prize</b> at Y Combinator Startup School, Antler, Microsoft x Musa Capital, and Khosla Ventures x ForgeHacks.</li>
+        <li><b>People's Choice</b> at Google x HackNYU.</li>
+        <li>Y Combinator Startup School (flown out) · CodePath Cybersecurity (Honors) · AI in Education VIP.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 ## Tools I reach for
 
@@ -111,8 +78,6 @@
   <b>Infrastructure:</b> streaming data pipelines, DevSecOps, distributed systems, gRPC, CI/CD<br>
   <b>AI and ML:</b> agentic systems, RAG and GraphRAG, LLM fine-tuning and quantization, distributed inference and model sharding, time-series modelling, evaluation harnesses
 </p>
-
-<br>
 
 <p align="center">
   <sub>Off-screen: photography, gym, guitar. Open to hard problems in agents, inference, and security.</sub>
