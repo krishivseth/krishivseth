@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="596" height="250" viewBox="0 0 596 250" role="img" aria-label="skills">
+<defs><linearGradient id="winbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#131313"/><stop offset="1" stop-color="#0d0d0d"/></linearGradient><linearGradient id="titlebg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a1a1a"/><stop offset="1" stop-color="#101010"/></linearGradient><linearGradient id="chipg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#151515"/><stop offset="1" stop-color="#0e0e0e"/></linearGradient></defs>
+<rect x="0.5" y="0.5" width="595" height="249" rx="10" fill="url(#winbg)" stroke="#333333"/>
+<path d="M10.5,0.5 h576 a10,10 0 0 1 10,10 v23.5 h-595 v-23.5 a10,10 0 0 1 10,-10 z" fill="url(#titlebg)"/>
+<line x1="0.5" y1="34" x2="595.5" y2="34" stroke="#242424"/>
+<line x1="11" y1="1" x2="585" y2="1" stroke="#ffffff" stroke-opacity="0.05"/>
+<circle cx="20" cy="17" r="6" fill="#ef4444"/><circle cx="38" cy="17" r="6" fill="#f97316"/><circle cx="56" cy="17" r="6" fill="#22c55e"/>
+<text x="298.0" y="21" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#e5e5e5" text-anchor="middle" >▮ skills</text>
+<defs><linearGradient id="skw" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a855f7" stop-opacity="0.05"/><stop offset="0.55" stop-color="#a855f7" stop-opacity="0.02"/><stop offset="1" stop-color="#a855f7" stop-opacity="0"/></linearGradient></defs>
+<rect x="1" y="35" width="594" height="214" fill="url(#skw)"/>
+<rect x="24" y="66" width="40" height="140" rx="4" fill="#000" stroke="#242424"/>
+<rect x="25" y="132" width="38" height="74" rx="2" fill="#22c55e"/>
+<text x="44.0" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="bold" fill="#22c55e" text-anchor="middle" >9</text>
+<text x="44.0" y="222" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" >lang</text>
+<rect x="78" y="66" width="40" height="140" rx="4" fill="#000" stroke="#242424"/>
+<rect x="79" y="132" width="38" height="74" rx="2" fill="#60a5fa"/>
+<text x="98.0" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="bold" fill="#60a5fa" text-anchor="middle" >9</text>
+<text x="98.0" y="222" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" >web</text>
+<rect x="132" y="66" width="40" height="140" rx="4" fill="#000" stroke="#242424"/>
+<rect x="133" y="66" width="38" height="140" rx="2" fill="#f97316"/>
+<text x="152.0" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="bold" fill="#f97316" text-anchor="middle" >17</text>
+<text x="152.0" y="222" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" >infra</text>
+<rect x="186" y="66" width="40" height="140" rx="4" fill="#000" stroke="#242424"/>
+<rect x="187" y="132" width="38" height="74" rx="2" fill="#a855f7"/>
+<text x="206.0" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="bold" fill="#a855f7" text-anchor="middle" >9</text>
+<text x="206.0" y="222" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" >ai/ml</text>
+<rect x="240" y="66" width="40" height="140" rx="4" fill="#000" stroke="#242424"/>
+<rect x="241" y="148" width="38" height="58" rx="2" fill="#ef4444"/>
+<text x="260.0" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="bold" fill="#ef4444" text-anchor="middle" >7</text>
+<text x="260.0" y="222" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" >sec</text>
+<line x1="296" y1="48" x2="296" y2="236" stroke="#242424"/>
+<text x="310" y="66" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="bold" fill="#22c55e" text-anchor="start" >lang</text>
+<text x="310" y="79" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#c4c4c4" text-anchor="start" >Python · Go · Java · Scala · TS · C ·</text>
+<text x="310" y="91" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#c4c4c4" text-anchor="start" >SQL · Bash</text>
+<text x="310" y="102" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="bold" fill="#60a5fa" text-anchor="start" >web</text>
+<text x="310" y="115" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#c4c4c4" text-anchor="start" >React · Next.js · Node · FastAPI · Flask</text>
+<text x="310" y="138" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="bold" fill="#f97316" text-anchor="start" >infra</text>
+<text x="310" y="151" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#c4c4c4" text-anchor="start" >AWS · GCP · Terraform · K8s · Kinesis ·</text>
+<text x="310" y="163" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#c4c4c4" text-anchor="start" >Redis · ClickHouse</text>
+<text x="310" y="174" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="bold" fill="#a855f7" text-anchor="start" >ai/ml</text>
+<text x="310" y="187" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#c4c4c4" text-anchor="start" >fine-tuning · RAG/GraphRAG · agentic</text>
+<text x="310" y="199" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#c4c4c4" text-anchor="start" >systems · LangSmith</text>
+<text x="310" y="210" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="bold" fill="#ef4444" text-anchor="start" >sec</text>
+<text x="310" y="223" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#c4c4c4" text-anchor="start" >DevSecOps · AppSec · MCP security ·</text>
+<text x="310" y="235" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#c4c4c4" text-anchor="start" >supply chain</text>
+</svg>

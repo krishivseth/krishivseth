@@ -1,0 +1,357 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1208" height="560" viewBox="0 0 1208 560" role="img" aria-label="krishivOS desktop">
+<defs><linearGradient id="winbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#131313"/><stop offset="1" stop-color="#0d0d0d"/></linearGradient><linearGradient id="titlebg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a1a1a"/><stop offset="1" stop-color="#101010"/></linearGradient><linearGradient id="chipg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#151515"/><stop offset="1" stop-color="#0e0e0e"/></linearGradient><linearGradient id="menubg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#121212"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient><linearGradient id="dockbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#181818"/><stop offset="1" stop-color="#0c0c0c"/></linearGradient><linearGradient id="panelbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#141414"/><stop offset="1" stop-color="#0c0c0c"/></linearGradient><linearGradient id="washg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22c55e" stop-opacity="0.06"/><stop offset="0.55" stop-color="#22c55e" stop-opacity="0.02"/><stop offset="1" stop-color="#22c55e" stop-opacity="0"/></linearGradient><linearGradient id="washb" x1="1" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#60a5fa" stop-opacity="0.05"/><stop offset="0.55" stop-color="#60a5fa" stop-opacity="0.02"/><stop offset="1" stop-color="#60a5fa" stop-opacity="0"/></linearGradient><linearGradient id="bannerw" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22c55e" stop-opacity="0.09"/><stop offset="0.55" stop-color="#22c55e" stop-opacity="0.02"/><stop offset="1" stop-color="#22c55e" stop-opacity="0"/></linearGradient><linearGradient id="welcw" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#60a5fa" stop-opacity="0.08"/><stop offset="0.55" stop-color="#60a5fa" stop-opacity="0.02"/><stop offset="1" stop-color="#60a5fa" stop-opacity="0"/></linearGradient></defs>
+<rect width="1208" height="560" rx="12" fill="#0a0a0a"/>
+<rect width="1208" height="560" rx="12" fill="url(#washg)"/><rect width="1208" height="560" rx="12" fill="url(#washb)"/>
+<line x1="287" y1="305" x2="424" y2="328" stroke="#22c55e" stroke-opacity="0.009"/>
+<line x1="287" y1="305" x2="281" y2="189" stroke="#22c55e" stroke-opacity="0.027"/>
+<line x1="287" y1="305" x2="150" y2="270" stroke="#22c55e" stroke-opacity="0.007"/>
+<line x1="287" y1="305" x2="328" y2="355" stroke="#22c55e" stroke-opacity="0.068"/>
+<line x1="287" y1="305" x2="287" y2="169" stroke="#22c55e" stroke-opacity="0.011"/>
+<line x1="1106" y1="265" x2="1005" y2="321" stroke="#60a5fa" stroke-opacity="0.027"/>
+<line x1="1106" y1="265" x2="1184" y2="190" stroke="#60a5fa" stroke-opacity="0.034"/>
+<line x1="313" y1="131" x2="364" y2="17" stroke="#60a5fa" stroke-opacity="0.020"/>
+<line x1="313" y1="131" x2="281" y2="189" stroke="#60a5fa" stroke-opacity="0.067"/>
+<line x1="313" y1="131" x2="285" y2="20" stroke="#60a5fa" stroke-opacity="0.028"/>
+<line x1="313" y1="131" x2="287" y2="169" stroke="#60a5fa" stroke-opacity="0.083"/>
+<line x1="568" y1="468" x2="480" y2="482" stroke="#22c55e" stroke-opacity="0.048"/>
+<line x1="568" y1="468" x2="571" y2="403" stroke="#22c55e" stroke-opacity="0.067"/>
+<line x1="568" y1="468" x2="527" y2="351" stroke="#22c55e" stroke-opacity="0.020"/>
+<line x1="568" y1="468" x2="509" y2="467" stroke="#22c55e" stroke-opacity="0.073"/>
+<line x1="568" y1="468" x2="455" y2="487" stroke="#22c55e" stroke-opacity="0.028"/>
+<line x1="480" y1="482" x2="571" y2="403" stroke="#22c55e" stroke-opacity="0.023"/>
+<line x1="480" y1="482" x2="527" y2="351" stroke="#22c55e" stroke-opacity="0.008"/>
+<line x1="480" y1="482" x2="509" y2="467" stroke="#22c55e" stroke-opacity="0.094"/>
+<line x1="480" y1="482" x2="455" y2="487" stroke="#22c55e" stroke-opacity="0.100"/>
+<line x1="767" y1="486" x2="863" y2="516" stroke="#60a5fa" stroke-opacity="0.040"/>
+<line x1="767" y1="486" x2="840" y2="391" stroke="#60a5fa" stroke-opacity="0.024"/>
+<line x1="471" y1="8" x2="364" y2="17" stroke="#22c55e" stroke-opacity="0.034"/>
+<line x1="471" y1="8" x2="496" y2="84" stroke="#22c55e" stroke-opacity="0.056"/>
+<line x1="193" y1="536" x2="124" y2="545" stroke="#22c55e" stroke-opacity="0.065"/>
+<line x1="364" y1="17" x2="496" y2="84" stroke="#22c55e" stroke-opacity="0.002"/>
+<line x1="364" y1="17" x2="285" y2="20" stroke="#22c55e" stroke-opacity="0.057"/>
+<line x1="571" y1="403" x2="527" y2="351" stroke="#22c55e" stroke-opacity="0.066"/>
+<line x1="571" y1="403" x2="509" y2="467" stroke="#22c55e" stroke-opacity="0.048"/>
+<line x1="571" y1="403" x2="456" y2="328" stroke="#22c55e" stroke-opacity="0.011"/>
+<line x1="571" y1="403" x2="455" y2="487" stroke="#22c55e" stroke-opacity="0.005"/>
+<line x1="863" y1="516" x2="840" y2="391" stroke="#22c55e" stroke-opacity="0.019"/>
+<line x1="880" y1="323" x2="840" y2="391" stroke="#22c55e" stroke-opacity="0.057"/>
+<line x1="880" y1="323" x2="1005" y2="321" stroke="#22c55e" stroke-opacity="0.020"/>
+<line x1="880" y1="323" x2="778" y2="334" stroke="#22c55e" stroke-opacity="0.038"/>
+<line x1="1062" y1="55" x2="1196" y2="50" stroke="#22c55e" stroke-opacity="0.013"/>
+<line x1="598" y1="144" x2="496" y2="84" stroke="#60a5fa" stroke-opacity="0.025"/>
+<line x1="598" y1="144" x2="516" y2="233" stroke="#60a5fa" stroke-opacity="0.024"/>
+<line x1="527" y1="351" x2="509" y2="467" stroke="#22c55e" stroke-opacity="0.026"/>
+<line x1="527" y1="351" x2="424" y2="328" stroke="#22c55e" stroke-opacity="0.036"/>
+<line x1="527" y1="351" x2="516" y2="233" stroke="#22c55e" stroke-opacity="0.025"/>
+<line x1="527" y1="351" x2="456" y2="328" stroke="#22c55e" stroke-opacity="0.061"/>
+<line x1="509" y1="467" x2="456" y2="328" stroke="#60a5fa" stroke-opacity="0.002"/>
+<line x1="509" y1="467" x2="455" y2="487" stroke="#60a5fa" stroke-opacity="0.074"/>
+<line x1="424" y1="328" x2="516" y2="233" stroke="#60a5fa" stroke-opacity="0.014"/>
+<line x1="424" y1="328" x2="456" y2="328" stroke="#60a5fa" stroke-opacity="0.094"/>
+<line x1="424" y1="328" x2="328" y2="355" stroke="#60a5fa" stroke-opacity="0.040"/>
+<line x1="281" y1="189" x2="287" y2="169" stroke="#22c55e" stroke-opacity="0.103"/>
+<line x1="1035" y1="555" x2="1165" y2="507" stroke="#60a5fa" stroke-opacity="0.008"/>
+<line x1="1035" y1="555" x2="1064" y2="549" stroke="#60a5fa" stroke-opacity="0.096"/>
+<line x1="1035" y1="555" x2="1146" y2="544" stroke="#60a5fa" stroke-opacity="0.030"/>
+<line x1="1035" y1="555" x2="1158" y2="502" stroke="#60a5fa" stroke-opacity="0.013"/>
+<line x1="840" y1="391" x2="778" y2="334" stroke="#22c55e" stroke-opacity="0.052"/>
+<line x1="1165" y1="507" x2="1064" y2="549" stroke="#60a5fa" stroke-opacity="0.032"/>
+<line x1="1165" y1="507" x2="1146" y2="544" stroke="#60a5fa" stroke-opacity="0.086"/>
+<line x1="1165" y1="507" x2="1158" y2="502" stroke="#60a5fa" stroke-opacity="0.113"/>
+<line x1="126" y1="367" x2="150" y2="270" stroke="#60a5fa" stroke-opacity="0.040"/>
+<line x1="126" y1="367" x2="53" y2="344" stroke="#60a5fa" stroke-opacity="0.059"/>
+<line x1="126" y1="367" x2="93" y2="336" stroke="#60a5fa" stroke-opacity="0.084"/>
+<line x1="150" y1="270" x2="53" y2="344" stroke="#60a5fa" stroke-opacity="0.022"/>
+<line x1="150" y1="270" x2="93" y2="336" stroke="#60a5fa" stroke-opacity="0.050"/>
+<line x1="1196" y1="50" x2="1184" y2="190" stroke="#22c55e" stroke-opacity="0.007"/>
+<line x1="496" y1="84" x2="516" y2="233" stroke="#22c55e" stroke-opacity="0.000"/>
+<line x1="516" y1="233" x2="456" y2="328" stroke="#22c55e" stroke-opacity="0.030"/>
+<line x1="53" y1="344" x2="93" y2="336" stroke="#22c55e" stroke-opacity="0.088"/>
+<line x1="456" y1="328" x2="328" y2="355" stroke="#60a5fa" stroke-opacity="0.015"/>
+<line x1="1064" y1="549" x2="1146" y2="544" stroke="#60a5fa" stroke-opacity="0.054"/>
+<line x1="1064" y1="549" x2="1158" y2="502" stroke="#60a5fa" stroke-opacity="0.036"/>
+<line x1="285" y1="20" x2="287" y2="169" stroke="#22c55e" stroke-opacity="0.001"/>
+<line x1="1146" y1="544" x2="1158" y2="502" stroke="#22c55e" stroke-opacity="0.085"/>
+<circle cx="287" cy="305" r="1.7" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="1106" cy="265" r="1.8" fill="#60a5fa" fill-opacity="0.55"/>
+<circle cx="79" cy="7" r="1.0" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="313" cy="131" r="1.6" fill="#60a5fa" fill-opacity="0.55"/>
+<circle cx="568" cy="468" r="1.8" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="480" cy="482" r="1.0" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="767" cy="486" r="1.9" fill="#60a5fa" fill-opacity="0.55"/>
+<circle cx="471" cy="8" r="1.9" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="193" cy="536" r="1.1" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="364" cy="17" r="1.9" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="571" cy="403" r="1.7" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="863" cy="516" r="2.0" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="880" cy="323" r="1.5" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="1062" cy="55" r="2.0" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="598" cy="144" r="2.0" fill="#60a5fa" fill-opacity="0.55"/>
+<circle cx="527" cy="351" r="1.0" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="509" cy="467" r="1.1" fill="#60a5fa" fill-opacity="0.55"/>
+<circle cx="424" cy="328" r="1.9" fill="#60a5fa" fill-opacity="0.55"/>
+<circle cx="281" cy="189" r="2.3" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="1035" cy="555" r="1.4" fill="#60a5fa" fill-opacity="0.55"/>
+<circle cx="840" cy="391" r="1.6" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="1165" cy="507" r="1.8" fill="#60a5fa" fill-opacity="0.55"/>
+<circle cx="126" cy="367" r="1.4" fill="#60a5fa" fill-opacity="0.55"/>
+<circle cx="1005" cy="321" r="1.5" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="150" cy="270" r="1.4" fill="#60a5fa" fill-opacity="0.55"/>
+<circle cx="1196" cy="50" r="1.5" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="496" cy="84" r="1.8" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="516" cy="233" r="1.4" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="53" cy="344" r="1.5" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="456" cy="328" r="2.1" fill="#60a5fa" fill-opacity="0.55"/>
+<circle cx="1064" cy="549" r="1.0" fill="#60a5fa" fill-opacity="0.55"/>
+<circle cx="285" cy="20" r="1.8" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="93" cy="336" r="2.0" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="1146" cy="544" r="1.4" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="737" cy="87" r="1.3" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="1184" cy="190" r="2.1" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="1158" cy="502" r="1.3" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="455" cy="487" r="1.3" fill="#22c55e" fill-opacity="0.55"/>
+<circle cx="778" cy="334" r="1.6" fill="#60a5fa" fill-opacity="0.55"/>
+<circle cx="124" cy="545" r="2.0" fill="#60a5fa" fill-opacity="0.55"/>
+<circle cx="328" cy="355" r="1.1" fill="#60a5fa" fill-opacity="0.55"/>
+<circle cx="287" cy="169" r="1.5" fill="#22c55e" fill-opacity="0.55"/>
+<rect x="0" y="0" width="1208" height="30" fill="url(#menubg)"/><line x1="0" y1="30" x2="1208" y2="30" stroke="#242424"/>
+<text x="14" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" font-weight="bold" fill="#e5e5e5" text-anchor="start" >◈ krishiv_seth</text>
+<text x="150" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#8a8a8a" text-anchor="start" >terminal</text>
+<rect x="1130" y="5" width="66" height="20" rx="4" fill="url(#chipg)" stroke="#242424"/><text x="1163.0" y="19" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="bold" fill="#8a8a8a" text-anchor="middle" >14:02:11</text>
+<rect x="1008" y="5" width="114" height="20" rx="4" fill="url(#chipg)" stroke="#242424"/><text x="1065.0" y="19" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="bold" fill="#22c55e" text-anchor="middle" >● STATUS: ONLINE</text>
+<rect x="934" y="5" width="66" height="20" rx="4" fill="url(#chipg)" stroke="#242424"/><text x="967.0" y="19" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="bold" fill="#e5e5e5" text-anchor="middle" >NYU: &#x27;27</text>
+<rect x="860" y="5" width="66" height="20" rx="4" fill="url(#chipg)" stroke="#242424"/><text x="893.0" y="19" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="bold" fill="#e5e5e5" text-anchor="middle" >LOC: NYC</text>
+<rect x="822" y="5" width="30" height="20" rx="4" fill="url(#chipg)" stroke="#242424"/><text x="837.0" y="19" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="bold" fill="#8a8a8a" text-anchor="middle" >⌘K</text>
+<rect x="16" y="46" width="232" height="296" rx="10" fill="url(#panelbg)" stroke="#242424"/>
+<text x="28" y="66" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="bold" fill="#e5e5e5" text-anchor="start" >// system</text>
+<text x="236" y="66" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#8a8a8a" text-anchor="end" >14:02:11</text>
+<text x="28" y="88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#555555" text-anchor="start" >host</text>
+<text x="80" y="88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#e5e5e5" text-anchor="start" >krishiv-portfolio</text>
+<text x="28" y="105" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#555555" text-anchor="start" >user</text>
+<text x="80" y="105" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#e5e5e5" text-anchor="start" >krishiv_seth</text>
+<text x="28" y="122" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#555555" text-anchor="start" >loc</text>
+<text x="80" y="122" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#e5e5e5" text-anchor="start" >New York, NY</text>
+<text x="28" y="139" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#555555" text-anchor="start" >uptime</text>
+<text x="80" y="139" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#e5e5e5" text-anchor="start" >9s</text>
+<text x="28" y="156" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#555555" text-anchor="start" >roles</text>
+<text x="80" y="156" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#e5e5e5" text-anchor="start" >6 shipped</text>
+<text x="28" y="173" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#555555" text-anchor="start" >wins</text>
+<text x="80" y="173" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#e5e5e5" text-anchor="start" >5x hackathon</text>
+<text x="28" y="190" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#555555" text-anchor="start" >labs</text>
+<text x="80" y="190" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#e5e5e5" text-anchor="start" >3 research</text>
+<line x1="28" y1="214" x2="236" y2="214" stroke="#242424"/>
+<text x="28" y="234" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="bold" fill="#e5e5e5" text-anchor="start" >// commits · 12w</text>
+<text x="236" y="234" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#8a8a8a" text-anchor="end" >291</text>
+<rect x="28" y="244" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="28" y="259" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="28" y="274" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="28" y="289" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="28" y="304" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="28" y="319" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="28" y="334" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="43" y="244" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="43" y="259" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="43" y="274" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="43" y="289" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="43" y="304" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="43" y="319" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="43" y="334" width="12" height="12" rx="2" fill="#166534"/>
+<rect x="58" y="244" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="58" y="259" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="58" y="274" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="58" y="289" width="12" height="12" rx="2" fill="#22c55e"/>
+<rect x="58" y="304" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="58" y="319" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="58" y="334" width="12" height="12" rx="2" fill="#22c55e"/>
+<rect x="73" y="244" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="73" y="259" width="12" height="12" rx="2" fill="#16a34a"/>
+<rect x="73" y="274" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="73" y="289" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="73" y="304" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="73" y="319" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="73" y="334" width="12" height="12" rx="2" fill="#166534"/>
+<rect x="88" y="244" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="88" y="259" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="88" y="274" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="88" y="289" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="88" y="304" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="88" y="319" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="88" y="334" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="103" y="244" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="103" y="259" width="12" height="12" rx="2" fill="#166534"/>
+<rect x="103" y="274" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="103" y="289" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="103" y="304" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="103" y="319" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="103" y="334" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="118" y="244" width="12" height="12" rx="2" fill="#166534"/>
+<rect x="118" y="259" width="12" height="12" rx="2" fill="#166534"/>
+<rect x="118" y="274" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="118" y="289" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="118" y="304" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="118" y="319" width="12" height="12" rx="2" fill="#16a34a"/>
+<rect x="118" y="334" width="12" height="12" rx="2" fill="#166534"/>
+<rect x="133" y="244" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="133" y="259" width="12" height="12" rx="2" fill="#22c55e"/>
+<rect x="133" y="274" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="133" y="289" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="133" y="304" width="12" height="12" rx="2" fill="#166534"/>
+<rect x="133" y="319" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="133" y="334" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="148" y="244" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="148" y="259" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="148" y="274" width="12" height="12" rx="2" fill="#166534"/>
+<rect x="148" y="289" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="148" y="304" width="12" height="12" rx="2" fill="#16a34a"/>
+<rect x="148" y="319" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="148" y="334" width="12" height="12" rx="2" fill="#166534"/>
+<rect x="163" y="244" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="163" y="259" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="163" y="274" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="163" y="289" width="12" height="12" rx="2" fill="#16a34a"/>
+<rect x="163" y="304" width="12" height="12" rx="2" fill="#22c55e"/>
+<rect x="163" y="319" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="163" y="334" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="178" y="244" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="178" y="259" width="12" height="12" rx="2" fill="#166534"/>
+<rect x="178" y="274" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="178" y="289" width="12" height="12" rx="2" fill="#22c55e"/>
+<rect x="178" y="304" width="12" height="12" rx="2" fill="#166534"/>
+<rect x="178" y="319" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="178" y="334" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="193" y="244" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="193" y="259" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="193" y="274" width="12" height="12" rx="2" fill="#14532d"/>
+<rect x="193" y="289" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="193" y="304" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="193" y="319" width="12" height="12" rx="2" fill="#1c1c1c"/>
+<rect x="193" y="334" width="12" height="12" rx="2" fill="#166534"/>
+<rect x="268" y="50" width="740" height="438" rx="10" fill="url(#winbg)" stroke="#333333"/>
+<path d="M278,50 h720 a10,10 0 0 1 10,10 v24 h-740 v-24 a10,10 0 0 1 10,-10 z" fill="url(#titlebg)"/><line x1="268" y1="84" x2="1008" y2="84" stroke="#242424"/>
+<circle cx="288" cy="67" r="6" fill="#ef4444"/><circle cx="306" cy="67" r="6" fill="#f97316"/><circle cx="324" cy="67" r="6" fill="#22c55e"/>
+<text x="638.0" y="71" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#e5e5e5" text-anchor="middle" >&gt;_ terminal</text>
+<rect x="288" y="100" width="700" height="150" rx="8" fill="#0a0a0a" stroke="#22c55e" stroke-opacity="0.22"/><rect x="288" y="100" width="700" height="150" rx="8" fill="url(#bannerw)"/>
+<text x="310" y="152" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="40" font-weight="bold" fill="#22c55e" text-anchor="start" letter-spacing="6">KRISHIV</text>
+<line x1="310" y1="166" x2="618" y2="166" stroke="#22c55e" stroke-opacity="0.6"/>
+<text x="310" y="186" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#22c55e" text-anchor="start" >SOFTWARE &amp; SECURITY ENGINEER, AI BUILDER</text>
+<line x1="310" y1="194" x2="618" y2="194" stroke="#22c55e" stroke-opacity="0.6"/>
+<text x="310" y="216" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#22c55e" text-anchor="start" fill-opacity="0.85">CS + Data Science @ NYU Courant | 5x Hackathon Winner</text>
+<text x="310" y="232" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#22c55e" text-anchor="start" fill-opacity="0.85">Security Infra • AppSec • Full-Stack • Agentic Systems</text>
+<rect x="288" y="264" width="700" height="138" rx="8" fill="#0a0a0a" stroke="#60a5fa" stroke-opacity="0.22"/><rect x="288" y="264" width="700" height="138" rx="8" fill="url(#welcw)"/>
+<text x="306" y="292" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#9cc4ff" text-anchor="start" >┌─ WELCOME TO KRISHIV&#x27;S PORTFOLIO ─┐</text>
+<text x="306" y="320" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#cbd8ec" text-anchor="start" >Type </text>
+<text x="342.0" y="320" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#4ade80" text-anchor="start" >&#x27;help&#x27;</text>
+<text x="392.4" y="320" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#cbd8ec" text-anchor="start" >for available commands</text>
+<text x="306" y="340" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#cbd8ec" text-anchor="start" >Try </text>
+<text x="334.8" y="340" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#4ade80" text-anchor="start" >&#x27;time-travel&#x27;</text>
+<text x="435.6" y="340" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#cbd8ec" text-anchor="start" >to explore my journey</text>
+<text x="306" y="360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#cbd8ec" text-anchor="start" >Type </text>
+<text x="342.0" y="360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#4ade80" text-anchor="start" >&#x27;open projects&#x27;</text>
+<text x="457.2" y="360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#cbd8ec" text-anchor="start" >to browse the desktop apps</text>
+<text x="306" y="386" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#cbd8ec" text-anchor="start" >Ready to explore? Let&#x27;s dive in!</text>
+<rect x="288" y="416" width="700" height="40" rx="8" fill="#0a0a0a" stroke="#242424"/>
+<text x="304" y="441" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="bold" fill="#22c55e" text-anchor="start" >visitor@krishiv-portfolio:~$</text>
+<text x="512.8" y="441" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="normal" fill="#e5e5e5" text-anchor="start" >open projects</text>
+<rect x="966" y="428" width="8" height="17" rx="2" fill="#22c55e"/>
+<path d="M1036.6,64.26666666666667 a3.066666666666667,3.066666666666667 0 0 1 3.066666666666667,-3.066666666666667 h9.966666666666667 l3.8333333333333335,3.8333333333333335 h16.866666666666667 a3.066666666666667,3.066666666666667 0 0 1 3.066666666666667,3.066666666666667 v19.933333333333334 a3.066666666666667,3.066666666666667 0 0 1 -3.066666666666667,3.066666666666667 h-33.733333333333334 a3.066666666666667,3.066666666666667 0 0 1 -3.066666666666667,-3.066666666666667 z" fill="#5b9dff" fill-opacity="0.6"/>
+<path d="M1036.6,70.4 h36.800000000000004 v17.633333333333333 a3.066666666666667,3.066666666666667 0 0 1 -3.066666666666667,3.066666666666667 h-30.666666666666668 a3.066666666666667,3.066666666666667 0 0 1 -3.066666666666667,-3.066666666666667 z" fill="#5b9dff"/>
+<rect x="1036.6" y="70.4" width="36.800000000000004" height="2.3000000000000003" fill="#fff" fill-opacity="0.22"/>
+<text x="1057" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#e5e5e5" text-anchor="middle" style="paint-order:stroke" stroke="#000" stroke-width="2">Orchard</text>
+<path d="M1128.6,64.26666666666667 a3.066666666666667,3.066666666666667 0 0 1 3.066666666666667,-3.066666666666667 h9.966666666666667 l3.8333333333333335,3.8333333333333335 h16.866666666666667 a3.066666666666667,3.066666666666667 0 0 1 3.066666666666667,3.066666666666667 v19.933333333333334 a3.066666666666667,3.066666666666667 0 0 1 -3.066666666666667,3.066666666666667 h-33.733333333333334 a3.066666666666667,3.066666666666667 0 0 1 -3.066666666666667,-3.066666666666667 z" fill="#5b9dff" fill-opacity="0.6"/>
+<path d="M1128.6,70.4 h36.800000000000004 v17.633333333333333 a3.066666666666667,3.066666666666667 0 0 1 -3.066666666666667,3.066666666666667 h-30.666666666666668 a3.066666666666667,3.066666666666667 0 0 1 -3.066666666666667,-3.066666666666667 z" fill="#5b9dff"/>
+<rect x="1128.6" y="70.4" width="36.800000000000004" height="2.3000000000000003" fill="#fff" fill-opacity="0.22"/>
+<text x="1149" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#e5e5e5" text-anchor="middle" style="paint-order:stroke" stroke="#000" stroke-width="2">Ouroboros</text>
+<path d="M1036.6,156.26666666666668 a3.066666666666667,3.066666666666667 0 0 1 3.066666666666667,-3.066666666666667 h9.966666666666667 l3.8333333333333335,3.8333333333333335 h16.866666666666667 a3.066666666666667,3.066666666666667 0 0 1 3.066666666666667,3.066666666666667 v19.933333333333334 a3.066666666666667,3.066666666666667 0 0 1 -3.066666666666667,3.066666666666667 h-33.733333333333334 a3.066666666666667,3.066666666666667 0 0 1 -3.066666666666667,-3.066666666666667 z" fill="#5b9dff" fill-opacity="0.6"/>
+<path d="M1036.6,162.4 h36.800000000000004 v17.633333333333333 a3.066666666666667,3.066666666666667 0 0 1 -3.066666666666667,3.066666666666667 h-30.666666666666668 a3.066666666666667,3.066666666666667 0 0 1 -3.066666666666667,-3.066666666666667 z" fill="#5b9dff"/>
+<rect x="1036.6" y="162.4" width="36.800000000000004" height="2.3000000000000003" fill="#fff" fill-opacity="0.22"/>
+<text x="1057" y="208" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#e5e5e5" text-anchor="middle" style="paint-order:stroke" stroke="#000" stroke-width="2">What The R…</text>
+<path d="M1128.6,156.26666666666668 a3.066666666666667,3.066666666666667 0 0 1 3.066666666666667,-3.066666666666667 h9.966666666666667 l3.8333333333333335,3.8333333333333335 h16.866666666666667 a3.066666666666667,3.066666666666667 0 0 1 3.066666666666667,3.066666666666667 v19.933333333333334 a3.066666666666667,3.066666666666667 0 0 1 -3.066666666666667,3.066666666666667 h-33.733333333333334 a3.066666666666667,3.066666666666667 0 0 1 -3.066666666666667,-3.066666666666667 z" fill="#5b9dff" fill-opacity="0.6"/>
+<path d="M1128.6,162.4 h36.800000000000004 v17.633333333333333 a3.066666666666667,3.066666666666667 0 0 1 -3.066666666666667,3.066666666666667 h-30.666666666666668 a3.066666666666667,3.066666666666667 0 0 1 -3.066666666666667,-3.066666666666667 z" fill="#5b9dff"/>
+<rect x="1128.6" y="162.4" width="36.800000000000004" height="2.3000000000000003" fill="#fff" fill-opacity="0.22"/>
+<text x="1149" y="208" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#e5e5e5" text-anchor="middle" style="paint-order:stroke" stroke="#000" stroke-width="2">Trevor AI</text>
+<path d="M1036.6,248.26666666666668 a3.066666666666667,3.066666666666667 0 0 1 3.066666666666667,-3.066666666666667 h9.966666666666667 l3.8333333333333335,3.8333333333333335 h16.866666666666667 a3.066666666666667,3.066666666666667 0 0 1 3.066666666666667,3.066666666666667 v19.933333333333334 a3.066666666666667,3.066666666666667 0 0 1 -3.066666666666667,3.066666666666667 h-33.733333333333334 a3.066666666666667,3.066666666666667 0 0 1 -3.066666666666667,-3.066666666666667 z" fill="#5b9dff" fill-opacity="0.6"/>
+<path d="M1036.6,254.4 h36.800000000000004 v17.633333333333333 a3.066666666666667,3.066666666666667 0 0 1 -3.066666666666667,3.066666666666667 h-30.666666666666668 a3.066666666666667,3.066666666666667 0 0 1 -3.066666666666667,-3.066666666666667 z" fill="#5b9dff"/>
+<rect x="1036.6" y="254.4" width="36.800000000000004" height="2.3000000000000003" fill="#fff" fill-opacity="0.22"/>
+<text x="1057" y="300" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#e5e5e5" text-anchor="middle" style="paint-order:stroke" stroke="#000" stroke-width="2">Forkast</text>
+<defs><linearGradient id="tile5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f5f5f4"/><stop offset="1" stop-color="#d6d3d1"/></linearGradient></defs>
+<rect x="1128" y="238" width="42" height="42" rx="10.08" fill="url(#tile5)"/>
+<rect x="1128.5" y="238.5" width="41" height="41" rx="10.08" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
+<rect x="1140.6" y="246.4" width="18.2" height="25.2" rx="1.4" fill="#fff" stroke="#a8a29e" stroke-width="1.0499999999999998"/>
+<rect x="1142.7" y="257.6" width="12.6" height="1.75" rx="0.7" fill="#57534e"/>
+<rect x="1142.7" y="261.8" width="12.6" height="1.75" rx="0.7" fill="#a8a29e"/>
+<rect x="1142.7" y="266.0" width="8.399999999999999" height="1.75" rx="0.7" fill="#a8a29e"/>
+<text x="1149" y="300" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#e5e5e5" text-anchor="middle" style="paint-order:stroke" stroke="#000" stroke-width="2">Resume.pdf</text>
+<defs><linearGradient id="tile6" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#27272a"/><stop offset="1" stop-color="#09090b"/></linearGradient></defs>
+<rect x="1036" y="330" width="42" height="42" rx="10.08" fill="url(#tile6)"/>
+<rect x="1036.5" y="330.5" width="41" height="41" rx="10.08" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
+<text x="1057.0" y="358.56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.12" font-weight="bold" fill="#fff" text-anchor="middle" >gh</text>
+<text x="1057" y="392" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#e5e5e5" text-anchor="middle" style="paint-order:stroke" stroke="#000" stroke-width="2">GitHub</text>
+<defs><linearGradient id="tile7" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a66c2"/><stop offset="1" stop-color="#004182"/></linearGradient></defs>
+<rect x="1128" y="330" width="42" height="42" rx="10.08" fill="url(#tile7)"/>
+<rect x="1128.5" y="330.5" width="41" height="41" rx="10.08" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
+<text x="1149.0" y="358.56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17.64" font-weight="bold" fill="#fff" text-anchor="middle" >in</text>
+<text x="1149" y="392" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#e5e5e5" text-anchor="middle" style="paint-order:stroke" stroke="#000" stroke-width="2">LinkedIn</text>
+<rect x="353.0" y="484" width="502" height="66" rx="16" fill="url(#dockbg)" stroke="#242424"/><line x1="369.0" y1="485" x2="839.0" y2="485" stroke="#fff" stroke-opacity="0.05"/>
+<defs><linearGradient id="dock0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f2937"/><stop offset="1" stop-color="#030712"/></linearGradient></defs>
+<rect x="365.0" y="493" width="44" height="44" rx="10.559999999999999" fill="url(#dock0)"/>
+<rect x="365.5" y="493.5" width="43" height="43" rx="10.559999999999999" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
+<path d="M377.46666666666664,509.1333333333333 L383.3333333333333,515.0 L377.46666666666664,520.8666666666667" stroke="#22c55e" stroke-width="2.933333333333333" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="387.0" y1="520.8666666666667" x2="397.26666666666665" y2="520.8666666666667" stroke="#e5e5e5" stroke-width="2.933333333333333" stroke-linecap="round"/>
+<circle cx="387.0" cy="544" r="2" fill="#e5e5e5"/>
+<defs><linearGradient id="dock1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient></defs>
+<rect x="419.0" y="493" width="44" height="44" rx="10.559999999999999" fill="url(#dock1)"/>
+<rect x="419.5" y="493.5" width="43" height="43" rx="10.559999999999999" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
+<rect x="427.8" y="505.46666666666664" width="27.866666666666664" height="22.0" rx="2.1999999999999997" fill="#fff" fill-opacity="0.92"/>
+<rect x="427.8" y="512.8" width="27.866666666666664" height="14.666666666666666" rx="2.1999999999999997" fill="#fff"/>
+<defs><linearGradient id="dock2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f97316"/><stop offset="1" stop-color="#c2410c"/></linearGradient></defs>
+<rect x="473.0" y="493" width="44" height="44" rx="10.559999999999999" fill="url(#dock2)"/>
+<rect x="473.5" y="493.5" width="43" height="43" rx="10.559999999999999" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
+<rect x="481.8" y="507.6666666666667" width="26.4" height="17.599999999999998" rx="2.933333333333333" fill="#fff" fill-opacity="0.95"/>
+<rect x="486.2" y="514.2666666666667" width="11.733333333333333" height="2.1999999999999997" rx="1.0999999999999999" fill="#f97316"/>
+<rect x="486.2" y="518.6666666666667" width="17.599999999999998" height="2.1999999999999997" rx="1.0999999999999999" fill="#f97316" fill-opacity="0.6"/>
+<defs><linearGradient id="dock3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a855f7"/><stop offset="1" stop-color="#6d28d9"/></linearGradient></defs>
+<rect x="527.0" y="493" width="44" height="44" rx="10.559999999999999" fill="url(#dock3)"/>
+<rect x="527.5" y="493.5" width="43" height="43" rx="10.559999999999999" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
+<rect x="537.2666666666667" y="515.0" width="5.133333333333333" height="11.733333333333333" rx="1.0999999999999999" fill="#fff" fill-opacity="0.7"/>
+<rect x="546.0666666666667" y="506.2" width="5.133333333333333" height="20.53333333333333" rx="1.0999999999999999" fill="#fff" fill-opacity="1"/>
+<rect x="554.8666666666667" y="511.3333333333333" width="5.133333333333333" height="15.399999999999999" rx="1.0999999999999999" fill="#fff" fill-opacity="0.85"/>
+<defs><linearGradient id="dock4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22c55e"/><stop offset="1" stop-color="#15803d"/></linearGradient></defs>
+<rect x="581.0" y="493" width="44" height="44" rx="10.559999999999999" fill="url(#dock4)"/>
+<rect x="581.5" y="493.5" width="43" height="43" rx="10.559999999999999" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
+<circle cx="603.0" cy="515.0" r="3.6666666666666665" fill="#fff"/>
+<line x1="603.0" y1="515.0" x2="603.0" y2="503.26666666666665" stroke="#fff" stroke-width="1.8333333333333333"/>
+<circle cx="603.0" cy="503.26666666666665" r="2.933333333333333" fill="#fff" fill-opacity="0.9"/>
+<line x1="603.0" y1="515.0" x2="613.2666666666667" y2="520.8666666666667" stroke="#fff" stroke-width="1.8333333333333333"/>
+<circle cx="613.2666666666667" cy="520.8666666666667" r="2.933333333333333" fill="#fff" fill-opacity="0.9"/>
+<line x1="603.0" y1="515.0" x2="592.7333333333333" y2="520.8666666666667" stroke="#fff" stroke-width="1.8333333333333333"/>
+<circle cx="592.7333333333333" cy="520.8666666666667" r="2.933333333333333" fill="#fff" fill-opacity="0.9"/>
+<defs><linearGradient id="dock5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ef4444"/><stop offset="1" stop-color="#991b1b"/></linearGradient></defs>
+<rect x="635.0" y="493" width="44" height="44" rx="10.559999999999999" fill="url(#dock5)"/>
+<rect x="635.5" y="493.5" width="43" height="43" rx="10.559999999999999" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
+<path d="M657.0,501.8 L668.7333333333333,506.2 L668.7333333333333,515.0 L657.0,529.6666666666666 L645.2666666666667,515.0 L645.2666666666667,506.2 Z" fill="#fff" fill-opacity="0.95"/>
+<path d="M651.1333333333333,515.0 L655.5333333333333,519.4 L662.8666666666667,510.6" stroke="#ef4444" stroke-width="2.5666666666666664" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<defs><linearGradient id="dock6" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f5f5f4"/><stop offset="1" stop-color="#d6d3d1"/></linearGradient></defs>
+<rect x="689.0" y="493" width="44" height="44" rx="10.559999999999999" fill="url(#dock6)"/>
+<rect x="689.5" y="493.5" width="43" height="43" rx="10.559999999999999" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
+<rect x="702.2" y="501.8" width="19.066666666666666" height="26.4" rx="1.4666666666666666" fill="#fff" stroke="#a8a29e" stroke-width="1.0999999999999999"/>
+<rect x="704.4" y="513.5333333333333" width="13.2" height="1.8333333333333333" rx="0.7333333333333333" fill="#57534e"/>
+<rect x="704.4" y="517.9333333333333" width="13.2" height="1.8333333333333333" rx="0.7333333333333333" fill="#a8a29e"/>
+<rect x="704.4" y="522.3333333333334" width="8.799999999999999" height="1.8333333333333333" rx="0.7333333333333333" fill="#a8a29e"/>
+<defs><linearGradient id="dock7" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0ea5e9"/><stop offset="1" stop-color="#0369a1"/></linearGradient></defs>
+<rect x="743.0" y="493" width="44" height="44" rx="10.559999999999999" fill="url(#dock7)"/>
+<rect x="743.5" y="493.5" width="43" height="43" rx="10.559999999999999" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
+<rect x="751.8" y="506.2" width="26.4" height="17.599999999999998" rx="2.933333333333333" fill="#fff"/>
+<path d="M753.2666666666667,508.4 L765.0,517.2 L776.7333333333333,508.4" stroke="#0ea5e9" stroke-width="2.1999999999999997" fill="none" stroke-linejoin="round"/>
+<defs><linearGradient id="dock8" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6b7280"/><stop offset="1" stop-color="#374151"/></linearGradient></defs>
+<rect x="797.0" y="493" width="44" height="44" rx="10.559999999999999" fill="url(#dock8)"/>
+<rect x="797.5" y="493.5" width="43" height="43" rx="10.559999999999999" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
+<circle cx="819.0" cy="515.0" r="5.866666666666666" fill="none" stroke="#fff" stroke-width="2.933333333333333"/>
+<line x1="827.8" y1="515.0" x2="831.5" y2="515.0" stroke="#fff" stroke-width="2.933333333333333" stroke-linecap="round"/>
+<line x1="825.2" y1="521.2" x2="827.8" y2="523.8" stroke="#fff" stroke-width="2.933333333333333" stroke-linecap="round"/>
+<line x1="819.0" y1="523.8" x2="819.0" y2="527.5" stroke="#fff" stroke-width="2.933333333333333" stroke-linecap="round"/>
+<line x1="812.8" y1="521.2" x2="810.2" y2="523.8" stroke="#fff" stroke-width="2.933333333333333" stroke-linecap="round"/>
+<line x1="810.2" y1="515.0" x2="806.5" y2="515.0" stroke="#fff" stroke-width="2.933333333333333" stroke-linecap="round"/>
+<line x1="812.8" y1="508.8" x2="810.2" y2="506.2" stroke="#fff" stroke-width="2.933333333333333" stroke-linecap="round"/>
+<line x1="819.0" y1="506.2" x2="819.0" y2="502.5" stroke="#fff" stroke-width="2.933333333333333" stroke-linecap="round"/>
+<line x1="825.2" y1="508.8" x2="827.8" y2="506.2" stroke="#fff" stroke-width="2.933333333333333" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="596" height="250" viewBox="0 0 596 250" role="img" aria-label="projects / orchard">
+<defs><linearGradient id="winbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#131313"/><stop offset="1" stop-color="#0d0d0d"/></linearGradient><linearGradient id="titlebg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a1a1a"/><stop offset="1" stop-color="#101010"/></linearGradient><linearGradient id="chipg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#151515"/><stop offset="1" stop-color="#0e0e0e"/></linearGradient></defs>
+<rect x="0.5" y="0.5" width="595" height="249" rx="10" fill="url(#winbg)" stroke="#333333"/>
+<path d="M10.5,0.5 h576 a10,10 0 0 1 10,10 v23.5 h-595 v-23.5 a10,10 0 0 1 10,-10 z" fill="url(#titlebg)"/>
+<line x1="0.5" y1="34" x2="595.5" y2="34" stroke="#242424"/>
+<line x1="11" y1="1" x2="585" y2="1" stroke="#ffffff" stroke-opacity="0.05"/>
+<circle cx="20" cy="17" r="6" fill="#ef4444"/><circle cx="38" cy="17" r="6" fill="#f97316"/><circle cx="56" cy="17" r="6" fill="#22c55e"/>
+<text x="298.0" y="21" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="bold" fill="#e5e5e5" text-anchor="middle" >▤ projects / orchard</text>
+<defs><linearGradient id="pworchard" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22c55e" stop-opacity="0.07"/><stop offset="0.55" stop-color="#22c55e" stop-opacity="0.02"/><stop offset="1" stop-color="#22c55e" stop-opacity="0"/></linearGradient></defs>
+<rect x="1" y="35" width="594" height="214" fill="url(#pworchard)"/>
+<rect x="1" y="35" width="150" height="214" fill="#0a0a0a" fill-opacity="0.6"/><line x1="151" y1="35" x2="151" y2="249" stroke="#242424"/>
+<text x="14" y="56" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#555555" text-anchor="start" >~/projects</text>
+<rect x="8" y="63" width="136" height="22" rx="5" fill="#161616"/>
+<circle cx="20" cy="74" r="3" fill="#22c55e"/>
+<text x="30" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="bold" fill="#e5e5e5" text-anchor="start" >orchard/</text>
+<circle cx="20" cy="98" r="3" fill="#ef4444"/>
+<text x="30" y="102" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#8a8a8a" text-anchor="start" >ouroboros/</text>
+<circle cx="20" cy="122" r="3" fill="#a855f7"/>
+<text x="30" y="126" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#8a8a8a" text-anchor="start" >trevor/</text>
+<circle cx="20" cy="146" r="3" fill="#f97316"/>
+<text x="30" y="150" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#8a8a8a" text-anchor="start" >watchman/</text>
+<circle cx="20" cy="170" r="3" fill="#60a5fa"/>
+<text x="30" y="174" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#8a8a8a" text-anchor="start" >rent/</text>
+<circle cx="20" cy="194" r="3" fill="#ec4899"/>
+<text x="30" y="198" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="normal" fill="#8a8a8a" text-anchor="start" >series/</text>
+<text x="168" y="56" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#555555" text-anchor="start" >~/projects/orchard/README.md</text>
+<rect x="498" y="44" width="84" height="20" rx="4" fill="url(#chipg)" stroke="#242424"/><text x="540.0" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="bold" fill="#22c55e" text-anchor="middle" >Open Source</text>
+<text x="168" y="82" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="19" font-weight="bold" fill="#22c55e" text-anchor="start" >Orchard</text>
+<text x="168" y="104" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#c4c4c4" text-anchor="start" >Distributed inference and federated fine-tuning runtime</text>
+<text x="168" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#c4c4c4" text-anchor="start" >spanning 10+ Apple Silicon devices. Tensor sharding and</text>
+<text x="168" y="136" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="normal" fill="#c4c4c4" text-anchor="start" >layer pruning fit 20+ open-source models onto consumer</text>
+<rect x="168" y="156" width="126" height="20" rx="4" fill="url(#chipg)" stroke="#242424"/><text x="231.0" y="170" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="bold" fill="#e5e5e5" text-anchor="middle" >Distributed Systems</text>
+<rect x="300" y="156" width="103" height="20" rx="4" fill="url(#chipg)" stroke="#242424"/><text x="351.5" y="170" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="bold" fill="#e5e5e5" text-anchor="middle" >Tensor Sharding</text>
+<rect x="409" y="156" width="92" height="20" rx="4" fill="url(#chipg)" stroke="#242424"/><text x="455.0" y="170" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="bold" fill="#e5e5e5" text-anchor="middle" >Apple Silicon</text>
+<rect x="168" y="186" width="414" height="52" rx="6" fill="#0a0a0a" stroke="#242424"/>
+<text x="178" y="202" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#555555" text-anchor="start" >$ git log --oneline</text>
+<text x="178" y="216" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="bold" fill="#8a8a8a" text-anchor="start" >3a34122</text>
+<text x="234" y="216" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#c4c4c4" text-anchor="start" >Wrote the cluster manager and the peer discovery protocol</text>
+<text x="178" y="230" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="bold" fill="#8a8a8a" text-anchor="start" >56fc957</text>
+<text x="234" y="230" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="normal" fill="#c4c4c4" text-anchor="start" >Top 10% of Y Combinator applicants</text>
+</svg>
