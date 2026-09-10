@@ -235,7 +235,45 @@ def hero():
     body.append(t(w - 20, h - 14, "5x hackathon winner", 11, GREEN, "bold", "end"))
     panel("hero", w, h, "krishiv_seth", body)
 
+def timeline():
+    w, h = 1208, 210
+    rows = [("2023", "UPL", "cybersecurity", MUTED), ("2024", "Ambee", "data science", MUTED), ("2025", "Kanlet", "software eng", MUTED),
+            ("2025", "GoTrust", "ai engineering", ORANGE), ("2025", "Exar North", "ai software eng", PURPLE), ("2026", "Forkast", "forward deployed", BLUE), ("2026", "Clear Street", "security eng", GREEN)]
+    body = [glow(1000, 110, 420, GREEN, 0.10, "gt")]
+    x0, x1, y = 90, w - 90, 112
+    body.append(f'<line x1="{x0}" y1="{y}" x2="{x1}" y2="{y}" stroke="{DIM}" stroke-width="1.5"/>')
+    step = (x1 - x0) / (len(rows) - 1)
+    for i, (yr, co, role, c) in enumerate(rows):
+        x = x0 + i * step
+        body.append(t(x, 76, yr, 12, MUTED, anchor="middle"))
+        body.append(f'<circle cx="{x:.0f}" cy="{y}" r="7" fill="{PANEL}" stroke="{c}" stroke-width="2"/>')
+        body.append(t(x, 146, co, 15, TEXT, "bold", "middle"))
+        body.append(t(x, 166, role, 12, MUTED, anchor="middle"))
+    body.append(t(w - 20, 26, "internships, 2023 → 2026", 11, MUTED, anchor="end"))
+    panel("experience", w, h, "experience", body)
+
+def research_awards():
+    w, h = 1208, 230
+    body = [glow(300, 230, 400, PURPLE, 0.10, "gra"), glow(900, 230, 400, GREEN, 0.10, "grb")]
+    body.append(f'<line x1="{w/2}" y1="20" x2="{w/2}" y2="{h-20}" stroke="{BORDER}"/>')
+    items = [("NYU OSIRIS Lab", "byzantine fault tolerance; attack surfaces in agentic AI"), ("Harvard Business School", "NLP + data infrastructure for group behaviour research"), ("NYU Langone Health", "data infrastructure for neuroscience research")]
+    for i, (k, v) in enumerate(items):
+        y = 66 + i * 50
+        body.append(f'<rect x="20" y="{y-13}" width="4" height="30" rx="2" fill="{PURPLE}"/>')
+        body.append(t(34, y, k, 15, TEXT, "bold")); body.append(t(34, y + 19, v, 12, MUTED))
+    ax = w/2 + 20
+    body.append(t(ax, 26, "// awards", 12, TEXT, "bold"))
+    c, cw = chip(w - 20, 14, "5 wins", GREEN, GREEN, right=True); body.append(c)
+    wins = [("GRAND PRIZE", "YC Startup School", GREEN), ("GRAND PRIZE", "Antler", GREEN), ("GRAND PRIZE", "Microsoft x Musa Capital", GREEN), ("GRAND PRIZE", "Khosla Ventures x ForgeHacks", GREEN), ("PEOPLE'S CHOICE", "Google x HackNYU", BLUE)]
+    for i, (k, v, c) in enumerate(wins):
+        y = 66 + i * 30
+        body.append(f'<rect x="{ax}" y="{y-12}" width="4" height="16" rx="2" fill="{c}"/>')
+        body.append(t(ax + 14, y, k, 10, c, "bold")); body.append(t(ax + 140, y, v, 14, TEXT))
+    panel("research_awards", w, h, "research", body, "##")
+
 hero()
+timeline()
+research_awards()
 for slug, name, desc, tags, color, vis in PROJECTS:
     project_card(slug, name, desc, tags, color, vis)
 print("generated", len(list(OUT.glob("*.svg"))))
