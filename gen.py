@@ -1,6 +1,6 @@
 """Mission-control style SVG panels for the GitHub profile README."""
 import html, math, pathlib, random, textwrap
-OUT = pathlib.Path(__file__).parent / "assets"
+OUT = pathlib.Path(__file__).parent / "assets-v2"
 MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace"
 BG, PANEL, BORDER, TEXT, MUTED, DIM = "#0a0a0a", "#0e0e0e", "#262626", "#e5e5e5", "#8a8a8a", "#3a3a3a"
 GREEN, BLUE, ORANGE, PURPLE, RED = "#22c55e", "#3b82f6", "#f97316", "#a855f7", "#ef4444"
