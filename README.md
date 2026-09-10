@@ -1,7 +1,7 @@
 <h1 align="center">Krishiv Seth</h1>
 
 <p align="center">
-  Forward Deployed Engineer at <a href="https://forkast.ai">Forkast</a> (Antler '25) &nbsp;·&nbsp; CS &amp; Data Science at NYU Courant &nbsp;·&nbsp; New York
+  Forward Deployed Engineer at Forkast (Antler '25) &nbsp;·&nbsp; CS &amp; Data Science at NYU Courant &nbsp;·&nbsp; New York
 </p>
 
 <p align="center">
