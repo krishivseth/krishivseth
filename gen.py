@@ -7,7 +7,7 @@ Run: python3 gen.py
 """
 import html, math, pathlib, random, textwrap
 
-OUT = pathlib.Path(__file__).parent / "assets-v4"
+OUT = pathlib.Path(__file__).parent / "assets-v5"
 OUT.mkdir(exist_ok=True)
 MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace"
 SANS = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
@@ -218,7 +218,7 @@ def hero():
     body.append(f'<line x1="24" y1="106" x2="520" y2="106" stroke="{GREEN}" stroke-opacity="0.5"/>')
     body.append(t(24, 128, "SOFTWARE & SECURITY ENGINEER, AI BUILDER", 12, SGREEN))
     body.append(t(24, 156, "CS + Data Science @ NYU Courant '27, Cybersecurity minor.", 12, "#e6eefc"))
-    body.append(t(24, 174, "Security infra and AppSec at Clear Street, forward deployed at Forkast (Antler '25),", 12, "#e6eefc"))
+    body.append(t(24, 174, "Backend and AppSec at Clear Street, forward deployed at Forkast (Antler '25),", 12, "#e6eefc"))
     body.append(t(24, 192, "agentic systems at Exar North, GoTrust, Kanlet. Research at OSIRIS Lab, HBS, NYU Langone.", 12, "#e6eefc"))
     x = w - 16
     for sname, c in [("● STATUS: ONLINE", SGREEN), ("NYU: '27", "#b0b0b0"), ("LOC: NYC", "#b0b0b0")]:
@@ -248,7 +248,7 @@ PROJECTS = [
     ("rent", "What The Rent?!", "Hackathon Winner", BLUE, "https://github.com/krishivseth/where2liv",
      "Chrome extensions for StreetEasy and Zillow that surface hidden rental costs across utilities, transit, and safety in NYC and SF.",
      ["Flask", "Next.js", "TypeScript", "Chrome APIs"],
-     ["Google Maps, building disclosures, and the 311 complaints API", "Microsoft x Musa Capital Grand Prize"]),
+     ["Microsoft x Musa Capital & Khosla x ForgeHacks grand prizes", "Google Maps, building disclosures, 311 complaints API"]),
     ("series", "Series Events", "Open Source", "#ec4899", "https://github.com/krishivseth/S_Events",
      "Event planning with group chemistry prediction, run entirely over iMessage.",
      ["TypeScript", "iMessage", "AI"],
