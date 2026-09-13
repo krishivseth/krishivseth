@@ -7,7 +7,7 @@ Run: python3 gen.py
 """
 import html, math, pathlib, random, textwrap
 
-OUT = pathlib.Path(__file__).parent / "assets-v5"
+OUT = pathlib.Path(__file__).parent / "assets-v6"
 OUT.mkdir(exist_ok=True)
 MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace"
 SANS = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
@@ -229,30 +229,38 @@ def hero():
 
 # ================================================================ project windows
 PROJECTS = [
+    ("rewind", "Rewind", "Open Source", GREEN, "https://github.com/krishivseth/Rewind-poc",
+     "Time-travel debugger for coding-agent sessions. Records every step, scrubs back to the exact repo state and messages the model saw, forks with a different model or prompt, and diffs the branches.",
+     ["TypeScript", "Node.js", "Postgres", "Docker"],
+     ["Live on Railway; runs locally, in Docker, or on Replit"]),
     ("orchard", "Orchard", "Open Source", GREEN, "https://github.com/krishivseth/Orchard",
      "Distributed inference and federated fine-tuning runtime spanning 10+ Apple Silicon devices. Tensor sharding and layer pruning fit 20+ open-source models onto consumer hardware.",
      ["Distributed Systems", "Tensor Sharding", "Apple Silicon"],
-     ["Wrote the cluster manager and the peer discovery protocol", "Top 10% of Y Combinator applicants"]),
-    ("ouroboros", "Ouroboros", "Security", RED, "https://github.com/krishivseth/Ouroboros",
+     ["Wrote the cluster manager and the peer discovery protocol"]),
+    ("ouroboros", "Ouroboros", "Security", GREEN, "https://github.com/krishivseth/Ouroboros",
      "Runtime detection for MCP tool calls against context-aware threat models. AST analysis catches tool poisoning, cross-server shadowing, and rug-pull redefinition.",
      ["Python", "AST Analysis", "MCP"],
-     ["Sandboxes untrusted servers", "Provenance via OSV, Socket, Syft/Grype, OpenSSF Scorecard"]),
-    ("trevor", "Trevor AI", "Hackathon Winner", PURPLE, "https://github.com/krishivseth/TrevorAI",
-     "Phone-callable multi-agent system: an orchestrator voice agent fans out sub-agents for portfolio analysis, research, and trade execution against the Tradier API.",
-     ["React", "TypeScript", "FastAPI", "Tradier API"],
-     ["React/TypeScript dashboard updates live during the call", "Khosla Ventures x ForgeHacks Grand Prize"]),
-    ("watchman", "Watchman", "Open Source", ORANGE, "https://github.com/krishivseth/watchman",
-     "Ask a fleet of security cameras questions in plain English and get the matching frames back.",
-     ["TypeScript", "SpacetimeDB", "Gemini"],
-     ["Frame retrieval over a live camera fleet", "Natural language query layer"]),
-    ("rent", "What The Rent?!", "Hackathon Winner", BLUE, "https://github.com/krishivseth/where2liv",
+     ["Provenance via OSV, Socket, Syft/Grype, OpenSSF Scorecard"]),
+    ("rent", "What The Rent?!", "Hackathon Winner", GREEN, "https://github.com/krishivseth/where2liv",
      "Chrome extensions for StreetEasy and Zillow that surface hidden rental costs across utilities, transit, and safety in NYC and SF.",
      ["Flask", "Next.js", "TypeScript", "Chrome APIs"],
-     ["Microsoft x Musa Capital & Khosla x ForgeHacks grand prizes", "Google Maps, building disclosures, 311 complaints API"]),
-    ("series", "Series Events", "Open Source", "#ec4899", "https://github.com/krishivseth/S_Events",
-     "Event planning with group chemistry prediction, run entirely over iMessage.",
-     ["TypeScript", "iMessage", "AI"],
-     ["Group chemistry scoring", "Zero-install: lives in the thread"]),
+     ["Microsoft x Musa Capital & Khosla x ForgeHacks grand prizes"]),
+    ("plop", "Plop", "Hackathon Winner", GREEN, None,
+     "Reimagines any room into 2D and 3D interior designs with an open-weight vision language model (Qwen-VL). Objects are real products from vendors you can swap in place; optimize by budget and theme.",
+     ["Qwen-VL", "3D", "Full-Stack"],
+     ["YC Startup School hackathon grand prize, built in 3 hours"]),
+    ("yieldly", "Yieldly", "Hackathon Winner", GREEN, None,
+     "Farm-to-table supply platform. Farms upload produce CSVs with prices and quantities; restaurants get AI and optimization-driven menu pricing against what is actually available nearby.",
+     ["Full-Stack", "Optimization", "AI"],
+     ["Antler hackathon grand prize"]),
+    ("nutrimap", "NutriMap", "Hackathon Winner", GREEN, None,
+     "Map of NYC menu items an AI agent searches across web-scraped menus to recommend breakfast, lunch, and dinner near you from your macros and calorie needs.",
+     ["AI Agents", "Web Scraping", "Full-Stack"],
+     ["Google x HackNYU people's choice"]),
+    ("trevor", "Trevor AI", "Open Source", GREEN, "https://github.com/krishivseth/TrevorAI",
+     "Phone-callable multi-agent system: an orchestrator voice agent fans out sub-agents for portfolio analysis, research, and trade execution against the Tradier API.",
+     ["React", "TypeScript", "FastAPI", "Tradier API"],
+     ["React/TypeScript dashboard updates live during the call"]),
 ]
 
 
@@ -266,7 +274,7 @@ def project_window(slug, name, cat, color, href, desc, tags, log):
     x = 24
     for tag in tags:
         c, cwid = chip(x, h - 52, tag, TEXT, size=9.5); body.append(c); x += cwid + 6
-    link = "github.com/krishivseth/" + href.rsplit("/", 1)[1] + " ↗"
+    link = ("github.com/krishivseth/" + href.rsplit("/", 1)[1] + " ↗") if href else "private repo"
     room = int((w - 40 - cw(link, 10)) / 6) - 2
     note = log[0] if len(log[0]) <= room else log[0][:room - 1].rstrip() + "…"
     body.append(t(24, h - 14, note, 10, MUTED))
@@ -353,7 +361,7 @@ def research_window():
 def awards_window():
     w, h = W, 150
     body = [defs(wash("aww", GREEN, a=0.06)), f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="url(#aww)"/>']
-    wins = [("GRAND PRIZE", "YC Startup School"), ("GRAND PRIZE", "Antler"), ("GRAND PRIZE", "Microsoft x Musa Capital"), ("GRAND PRIZE", "Khosla Ventures x ForgeHacks"), ("PEOPLE'S CHOICE", "Google x HackNYU")]
+    wins = [("GRAND PRIZE · PLOP", "YC Startup School"), ("GRAND PRIZE · YIELDLY", "Antler"), ("GRAND PRIZE · WHAT THE RENT", "Microsoft x Musa Capital"), ("GRAND PRIZE · WHAT THE RENT", "Khosla Ventures x ForgeHacks"), ("PEOPLE'S CHOICE · NUTRIMAP", "Google x HackNYU")]
     colw = (w - 48) / 5
     for i, (k, v) in enumerate(wins):
         x = 24 + i * colw; c = SBLUE
