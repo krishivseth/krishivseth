@@ -7,7 +7,7 @@ Run: python3 gen.py
 """
 import html, math, pathlib, random, textwrap
 
-OUT = pathlib.Path(__file__).parent / "assets-v6"
+OUT = pathlib.Path(__file__).parent / "assets-v7"
 OUT.mkdir(exist_ok=True)
 MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace"
 SANS = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
@@ -221,9 +221,9 @@ def hero():
     body.append(t(24, 174, "Backend and AppSec at Clear Street, forward deployed at Forkast (Antler '25),", 12, "#e6eefc"))
     body.append(t(24, 192, "agentic systems at Exar North, GoTrust, Kanlet. Research at OSIRIS Lab, HBS, NYU Langone.", 12, "#e6eefc"))
     x = w - 16
-    for sname, c in [("● STATUS: ONLINE", SGREEN), ("NYU: '27", "#b0b0b0"), ("LOC: NYC", "#b0b0b0")]:
+    for sname, c in [("OPEN TO: SWE · security · 2027", SGREEN), ("NYU: '27", "#b0b0b0"), ("LOC: NYC", "#b0b0b0")]:
         ch, cwid = chip(x, 12, sname, c, right=True); body.append(ch); x -= cwid + 8
-    body.append(t(24, h - 14, "krishivseth.com · terminal-first portfolio", 10, MUTED)); body.append(t(w - 16, h - 14, "everything below is on GitHub", 10, DIM, anchor="end"))
+    body.append(t(24, h - 14, "krishivseth.com", 10, MUTED)); body.append(t(w - 16, h - 14, "ks7118@nyu.edu", 10, DIM, anchor="end"))
     window("hero", w, h, "krishiv_seth", "◈", body)
 
 
