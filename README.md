@@ -2,6 +2,8 @@
 
 CS + Data Science at NYU, class of '27, with a cybersecurity minor. I like hard problems, shipping fast, and people who do both.
 
+[Portfolio](https://krishivseth.com)
+
 **Now:** researching attack surfaces in agentic and decentralised systems at NYU's [OSIRIS Lab](https://osiris.cyber.nyu.edu). Last summer I was at Clear Street doing backend and application security work: a Go log pipeline on Kinesis and an agent harness that reads code property graphs to find vulnerabilities across a monorepo. Before that, first engineering intern on the forward deployed team at Forkast (Antler '25).
 
 **Things I've built**
