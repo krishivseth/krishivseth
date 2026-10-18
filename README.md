@@ -8,7 +8,7 @@ CS + Data Science at NYU, class of '27, with a cybersecurity minor. I like hard 
 
 **Things I've built**
 
-- [Rewind](https://github.com/krishivseth/Rewind-poc) — time-travel debugger for coding-agent sessions. Scrub back to any step, see exactly what the model saw, fork with a different model, diff the branches. [Live here.](https://rewind-production-a902.up.railway.app)
+- [Rewind]([https://github.com/krishivseth/Rewind-poc](https://github.com/krishivseth/Rewind)) — time-travel debugger for coding-agent sessions. Scrub back to any step, see exactly what the model saw, fork with a different model, diff the branches. [Live here.](https://rewind-production-a902.up.railway.app)
 - [Orchard](https://github.com/krishivseth/Orchard) — distributed inference and federated fine-tuning across the Apple Silicon machines you already own. Top 10% of YC applicants.
 - [Ouroboros](https://github.com/krishivseth/Ouroboros) — runtime detection for MCP tool calls. Catches tool poisoning, cross-server shadowing, and rug-pulls before they run.
 - [What The Rent?!](https://github.com/krishivseth/where2liv) — Chrome extensions for StreetEasy and Zillow that surface the hidden costs of a rental in NYC and SF. Won Microsoft x Musa Capital and Khosla Ventures x ForgeHacks. [On the Chrome Web Store.](https://chromewebstore.google.com/detail/what-the-rent-hidden-cost/dlkbfepombacndnkmmjojkegiondfhfl)
